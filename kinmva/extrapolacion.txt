@@ -1,0 +1,10 @@
+Procedimiento para la extrapolación de la sensibilidad a altas luminosidades:
+En el código de creación del workspace, summar los histogramas de ruidos para crear un histograma con el ruido total “HMC”
+Escalar HMC a la luminosidad deseada. Por ejemplo a la luminosidad del Run2 150/fb , se aplica una escala de 150/35.9.
+Asignar incertidumbres apropiadas a la nueva luminosidad: pasa por todos los bins y cambiar el error a sqrt(N_bin):
+HMC->SetBinError(b,sqrt(HMC->GetBinConten(b))
+En el workspace salvar HMC como data_obs.  El data_obs original ya no se usa.
+Aplicar el ajuste como antes.
+Repetir para luminosidades:
+150/fb,   300/fb (Run 3) ,  3000/fb (HL-LHC)
+Crear una tabla con los nuevos resultados de mu y su incertidumbre.

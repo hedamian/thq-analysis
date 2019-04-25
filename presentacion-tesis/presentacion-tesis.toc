@@ -1,0 +1,10 @@
+\beamer@sectionintoc {1}{Overview and motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{Higgs theory}{5}{0}{2}
+\beamer@sectionintoc {3}{tH mechanisms}{9}{0}{3}
+\beamer@sectionintoc {4}{Production cross section}{12}{0}{4}
+\beamer@sectionintoc {5}{Higgs Branching ratios }{19}{0}{5}
+\beamer@sectionintoc {6}{Previous results}{28}{0}{6}
+\beamer@sectionintoc {7}{Fitting}{39}{0}{7}
+\beamer@sectionintoc {8}{Results}{41}{0}{8}
+\beamer@sectionintoc {9}{References}{49}{0}{9}
+\beamer@sectionintoc {10}{Supportive slides}{51}{0}{10}

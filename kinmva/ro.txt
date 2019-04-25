@@ -1,0 +1,1548 @@
+
+Processing macros/scanLikelihood.C("kinMVA","mu",2,20)...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_simPdf_FOR_OBS_channelCat:obs_x_SR with 7 entries
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (lumiConstraint,alpha_sample_tth_sysConstraint,alpha_sample_ttz_sysConstraint,alpha_sample_ttw_sysConstraint,alpha_sample_tz_sysConstraint,alpha_sample_wz_sysConstraint,alpha_sample_fakes_sysConstraint)
+[#1] INFO:Minization -- The following global observables have been defined: (nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state SR (16 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (th_SR_nominal,tth_SR_nominal,ttz_SR_nominal,ttw_SR_nominal,tz_SR_nominal,wz_SR_nominal,fakes_SR_nominal)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         1.00000e+00  5.00000e-01    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     8 mu           1.00000e+00  1.33000e+01   -3.30000e+01  1.00000e+02
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **    6 **MIGRAD        4000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(SR) first = 0 last = 16 Likelihood offset now set to -1149.59
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=2.78291 FROM MIGRAD    STATUS=INITIATE       32 CALLS          33 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00000e+00   5.00000e-01   1.72186e-01  -6.40798e+01
+   2  alpha_sample_fakes_sys   0.00000e+00   1.00000e+00   2.01358e-01  -7.18833e+00
+   3  alpha_sample_tth_sys   0.00000e+00   1.00000e+00   2.01358e-01  -1.53222e+00
+   4  alpha_sample_ttw_sys   0.00000e+00   1.00000e+00   2.01358e-01  -6.35402e+00
+   5  alpha_sample_ttz_sys   0.00000e+00   1.00000e+00   2.01358e-01  -1.65950e+00
+   6  alpha_sample_tz_sys   0.00000e+00   1.00000e+00   2.01358e-01  -2.09187e+00
+   7  alpha_sample_wz_sys   0.00000e+00   1.00000e+00   2.01358e-01  -1.46092e+00
+   8  mu           1.00000e+00   1.33000e+01   2.33417e-01  -8.97168e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=1.66066 FROM MIGRAD    STATUS=CONVERGED     126 CALLS         127 TOTAL
+                     EDM=5.4789e-05    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  10.6 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00853e+00   2.39619e-02  -7.98403e-05  -1.40289e-02
+   2  alpha_sample_fakes_sys   5.17810e-01   7.22327e-01   2.53262e-04  -9.82351e-02
+   3  alpha_sample_tth_sys   1.92902e-01   1.00356e+00  -4.11189e-03   4.03737e-03
+   4  alpha_sample_ttw_sys   8.79108e-01   9.42306e-01   2.49040e-03  -2.10262e-02
+   5  alpha_sample_ttz_sys   2.03698e-01   9.94456e-01  -2.84085e-03   4.21825e-03
+   6  alpha_sample_tz_sys   1.82687e-01   9.68782e-01  -3.99472e-03  -3.20790e-03
+   7  alpha_sample_wz_sys   1.42426e-01   9.98009e-01  -5.87742e-03  -1.77802e-02
+   8  mu           6.93609e-02   1.01668e+00   2.53420e-05  -6.04891e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  5.742e-04 -1.689e-03 -5.502e-05 -3.923e-04 -2.241e-04 -2.981e-04  7.349e-04 -2.071e-03 
+ -1.689e-03  5.255e-01 -4.812e-02 -1.124e-01 -4.419e-02 -7.271e-02 -8.277e-02 -5.545e-01 
+ -5.502e-05 -4.812e-02  1.021e+00 -5.815e-02  1.528e-02  5.267e-03 -1.131e-02 -2.546e-03 
+ -3.923e-04 -1.124e-01 -5.815e-02  8.990e-01 -5.155e-02 -7.576e-02 -2.876e-02 -3.466e-02 
+ -2.241e-04 -4.419e-02  1.528e-02 -5.155e-02  1.002e+00 -4.585e-03 -8.575e-03 -2.330e-02 
+ -2.981e-04 -7.271e-02  5.267e-03 -7.576e-02 -4.585e-03  9.505e-01  2.186e-02 -9.406e-02 
+  7.349e-04 -8.277e-02 -1.131e-02 -2.876e-02 -8.575e-03  2.186e-02  1.010e+00 -1.358e-01 
+ -2.071e-03 -5.545e-01 -2.546e-03 -3.466e-02 -2.330e-02 -9.406e-02 -1.358e-01  1.034e+00 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.32017   1.000 -0.097 -0.002 -0.017 -0.009 -0.013  0.031 -0.085
+        2  0.85542  -0.097  1.000 -0.066 -0.164 -0.061 -0.103 -0.114 -0.752
+        3  0.16826  -0.002 -0.066  1.000 -0.061  0.015  0.005 -0.011 -0.002
+        4  0.41917  -0.017 -0.164 -0.061  1.000 -0.054 -0.082 -0.030 -0.036
+        5  0.19161  -0.009 -0.061  0.015 -0.054  1.000 -0.005 -0.009 -0.023
+        6  0.37362  -0.013 -0.103  0.005 -0.082 -0.005  1.000  0.022 -0.095
+        7  0.41212   0.031 -0.114 -0.011 -0.030 -0.009  0.022  1.000 -0.133
+        8  0.84884  -0.085 -0.752 -0.002 -0.036 -0.023 -0.095 -0.133  1.000
+ ERR MATRIX APPROXIMATE
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         1.00853e+00  2.39619e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys   5.17810e-01  7.22327e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys   1.92902e-01  1.00356e+00   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys   8.79108e-01  9.42306e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys   2.03698e-01  9.94456e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys   1.82687e-01  9.68782e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys   1.42426e-01  9.98009e-01   -5.00000e+00  5.00000e+00
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **    6 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=1.67042 FROM MIGRAD    STATUS=INITIATE       28 CALLS          29 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00853e+00   2.39619e-02   7.95774e-03  -5.48641e+00
+   2  alpha_sample_fakes_sys   5.17810e-01   7.22327e-01   1.45779e-01  -1.72969e+00
+   3  alpha_sample_tth_sys   1.92902e-01   1.00356e+00   2.02244e-01  -5.79486e-02
+   4  alpha_sample_ttw_sys   8.79108e-01   9.42306e-01   1.92751e-01  -3.03387e-01
+   5  alpha_sample_ttz_sys   2.03698e-01   9.94456e-01   2.00402e-01  -9.74163e-02
+   6  alpha_sample_tz_sys   1.82687e-01   9.68782e-01   1.95127e-01  -2.76829e-01
+   7  alpha_sample_wz_sys   1.42426e-01   9.98009e-01   2.01038e-01  -3.16948e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=1.66294 FROM MIGRAD    STATUS=CONVERGED      76 CALLS          77 TOTAL
+                     EDM=3.75943e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  17.9 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00856e+00   2.38819e-02  -4.85821e-07  -4.08773e-02
+   2  alpha_sample_fakes_sys   5.57706e-01   4.45120e-01   2.73406e-04  -7.92824e-04
+   3  alpha_sample_tth_sys   1.91865e-01   9.77379e-01   1.04263e-03   1.70079e-03
+   4  alpha_sample_ttw_sys   8.80345e-01   8.48104e-01  -9.04927e-05  -6.34594e-04
+   5  alpha_sample_ttz_sys   2.03294e-01   9.78388e-01   8.85863e-04   7.43255e-04
+   6  alpha_sample_tz_sys   1.87066e-01   9.27309e-01  -3.04539e-04  -7.98366e-04
+   7  alpha_sample_wz_sys   1.53129e-01   9.74922e-01  -1.48688e-03   1.70152e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.704e-04 -2.790e-03 -1.286e-04  1.991e-05 -1.262e-04 -1.472e-04 -3.146e-04 
+ -2.790e-03  1.987e-01 -2.118e-02 -1.240e-01 -4.113e-02 -1.241e-01 -1.416e-01 
+ -1.286e-04 -2.118e-02  9.677e-01 -1.730e-02 -1.923e-02 -1.637e-02 -3.811e-02 
+  1.991e-05 -1.240e-01 -1.730e-02  7.265e-01 -1.561e-02 -1.262e-03  8.370e-03 
+ -1.262e-04 -4.113e-02 -1.923e-02 -1.561e-02  9.697e-01 -1.704e-02 -4.125e-02 
+ -1.472e-04 -1.241e-01 -1.637e-02 -1.262e-03 -1.704e-02  8.700e-01  9.885e-03 
+ -3.146e-04 -1.416e-01 -3.811e-02  8.370e-03 -4.125e-02  9.885e-03  9.628e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.32600   1.000 -0.262 -0.005  0.001 -0.005 -0.007 -0.013
+        2  0.62356  -0.262  1.000 -0.048 -0.326 -0.094 -0.298 -0.324
+        3  0.11153  -0.005 -0.048  1.000 -0.021 -0.020 -0.018 -0.039
+        4  0.38684   0.001 -0.326 -0.021  1.000 -0.019 -0.002  0.010
+        5  0.16371  -0.005 -0.094 -0.020 -0.019  1.000 -0.019 -0.043
+        6  0.35997  -0.007 -0.298 -0.018 -0.002 -0.019  1.000  0.011
+        7  0.39148  -0.013 -0.324 -0.039  0.010 -0.043  0.011  1.000
+ ERR MATRIX APPROXIMATE
+On point 1 / 20. mu=0, -2lnLambda=0.00454915 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **    7 **SET PRINT           1
+ **********
+ **********
+ **    8 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         1.00856e+00  2.38819e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys   5.57706e-01  4.45120e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys   1.91865e-01  9.77379e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys   8.80345e-01  8.48104e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys   2.03294e-01  9.78388e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys   1.87066e-01  9.27309e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys   1.53129e-01  9.74922e-01   -5.00000e+00  5.00000e+00
+ **********
+ **    9 **SET ERR         0.5
+ **********
+ **********
+ **   10 **SET PRINT           1
+ **********
+ **********
+ **   11 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   12 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=7.50401 FROM MIGRAD    STATUS=INITIATE       28 CALLS          29 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00856e+00   2.38819e-02   7.93107e-03   1.57755e+02
+   2  alpha_sample_fakes_sys   5.57706e-01   4.45120e-01   8.97078e-02   3.65290e+01
+   3  alpha_sample_tth_sys   1.91865e-01   9.77379e-01   1.96895e-01   1.50426e+00
+   4  alpha_sample_ttw_sys   8.80345e-01   8.48104e-01   1.73263e-01   6.83816e+00
+   5  alpha_sample_ttz_sys   2.03294e-01   9.78388e-01   1.97120e-01   2.35793e+00
+   6  alpha_sample_tz_sys   1.87066e-01   9.27309e-01   1.86679e-01   6.09960e+00
+   7  alpha_sample_wz_sys   1.53129e-01   9.74922e-01   1.96338e-01   6.52826e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=3.44915 FROM MIGRAD    STATUS=CONVERGED      92 CALLS          93 TOTAL
+                     EDM=1.02139e-05    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  12.1 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00220e+00   2.38294e-02  -1.10421e-04   2.42323e-02
+   2  alpha_sample_fakes_sys  -5.10385e-01   5.52397e-01  -3.02401e-03  -2.06806e-02
+   3  alpha_sample_tth_sys   1.65423e-01   9.75618e-01   5.69072e-03   5.83686e-03
+   4  alpha_sample_ttw_sys   7.50644e-01   8.47001e-01  -2.85610e-04   8.89820e-03
+   5  alpha_sample_ttz_sys   1.30451e-01   9.66128e-01   3.87955e-03  -1.89840e-03
+   6  alpha_sample_tz_sys  -4.19563e-02   8.21271e-01   3.35694e-03  -7.74392e-03
+   7  alpha_sample_wz_sys  -1.51697e-01   8.59350e-01   5.18647e-03  -1.13948e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.679e-04 -3.089e-03 -1.044e-03  3.276e-04 -9.329e-04 -8.592e-04 -1.359e-03 
+ -3.089e-03  3.064e-01 -2.128e-02 -1.210e-01 -4.140e-02 -1.292e-01 -1.495e-01 
+ -1.044e-03 -2.128e-02  9.642e-01 -4.362e-02 -2.483e-03  1.247e-03  1.248e-02 
+  3.276e-04 -1.210e-01 -4.362e-02  7.245e-01 -3.362e-02 -2.162e-02 -3.558e-02 
+ -9.329e-04 -4.140e-02 -2.483e-03 -3.362e-02  9.453e-01 -1.140e-03  6.817e-03 
+ -8.592e-04 -1.292e-01  1.247e-03 -2.162e-02 -1.140e-03  6.806e-01  7.597e-02 
+ -1.359e-03 -1.495e-01  1.248e-02 -3.558e-02  6.817e-03  7.597e-02  7.459e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.32187   1.000 -0.234 -0.045  0.016 -0.040 -0.044 -0.066
+        2  0.56563  -0.234  1.000 -0.039 -0.257 -0.077 -0.283 -0.313
+        3  0.10096  -0.045 -0.039  1.000 -0.052 -0.003  0.002  0.015
+        4  0.33356   0.016 -0.257 -0.052  1.000 -0.041 -0.031 -0.048
+        5  0.13009  -0.040 -0.077 -0.003 -0.041  1.000 -0.001  0.008
+        6  0.32814  -0.044 -0.283  0.002 -0.031 -0.001  1.000  0.107
+        7  0.37368  -0.066 -0.313  0.015 -0.048  0.008  0.107  1.000
+ ERR MATRIX APPROXIMATE
+On point 2 / 20. mu=2, -2lnLambda=3.57697 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   13 **SET PRINT           1
+ **********
+ **********
+ **   14 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         1.00220e+00  2.38294e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -5.10385e-01  5.52397e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys   1.65423e-01  9.75618e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys   7.50644e-01  8.47001e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys   1.30451e-01  9.66128e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -4.19563e-02  8.21271e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.51697e-01  8.59350e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   15 **SET ERR         0.5
+ **********
+ **********
+ **   16 **SET PRINT           1
+ **********
+ **********
+ **   17 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   18 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=11.7582 FROM MIGRAD    STATUS=INITIATE       26 CALLS          27 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00220e+00   2.38294e-02   7.93592e-03   1.57378e+02
+   2  alpha_sample_fakes_sys  -5.10385e-01   5.52397e-01   1.11296e-01   2.07030e+01
+   3  alpha_sample_tth_sys   1.65423e-01   9.75618e-01   1.96497e-01   1.43077e+00
+   4  alpha_sample_ttw_sys   7.50644e-01   8.47001e-01   1.72253e-01   6.43355e+00
+   5  alpha_sample_ttz_sys   1.30451e-01   9.66128e-01   1.94518e-01   2.13172e+00
+   6  alpha_sample_tz_sys  -4.19563e-02   8.21271e-01   1.65008e-01   4.86946e+00
+   7  alpha_sample_wz_sys  -1.51697e-01   8.59350e-01   1.72810e-01   4.89061e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=9.13222 FROM MIGRAD    STATUS=CONVERGED      90 CALLS          91 TOTAL
+                     EDM=3.77456e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  10.6 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.88426e-01   2.30448e-02  -1.00582e-05   3.62758e-03
+   2  alpha_sample_fakes_sys  -1.41024e+00   6.38395e-01  -9.49511e-04  -2.39602e-03
+   3  alpha_sample_tth_sys   8.77257e-02   9.79739e-01   1.45794e-03   1.23776e-03
+   4  alpha_sample_ttw_sys   3.78783e-01   8.48922e-01  -6.31372e-04   1.85521e-03
+   5  alpha_sample_ttz_sys  -5.26526e-03   9.67131e-01   7.73146e-04  -9.43251e-04
+   6  alpha_sample_tz_sys  -3.29996e-01   7.92241e-01   7.69874e-05  -6.22517e-04
+   7  alpha_sample_wz_sys  -4.75887e-01   8.10094e-01   7.75753e-04  -2.76501e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.311e-04 -3.347e-03 -9.753e-04 -6.935e-04 -1.006e-03 -5.389e-04 -6.634e-04 
+ -3.347e-03  4.100e-01 -2.349e-02 -9.339e-02 -3.861e-02 -8.210e-02 -1.031e-01 
+ -9.753e-04 -2.349e-02  9.724e-01 -5.095e-02  6.395e-03 -1.351e-02  1.060e-02 
+ -6.935e-04 -9.339e-02 -5.095e-02  7.277e-01 -4.190e-02 -2.223e-02 -5.273e-02 
+ -1.006e-03 -3.861e-02  6.395e-03 -4.190e-02  9.472e-01 -1.644e-02 -1.870e-03 
+ -5.389e-04 -8.210e-02 -1.351e-02 -2.223e-02 -1.644e-02  6.330e-01 -4.747e-03 
+ -6.634e-04 -1.031e-01  1.060e-02 -5.273e-02 -1.870e-03 -4.747e-03  6.621e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.28177   1.000 -0.227 -0.043 -0.035 -0.045 -0.029 -0.035
+        2  0.41795  -0.227  1.000 -0.037 -0.171 -0.062 -0.161 -0.198
+        3  0.10259  -0.043 -0.037  1.000 -0.061  0.007 -0.017  0.013
+        4  0.25435  -0.035 -0.171 -0.061  1.000 -0.050 -0.033 -0.076
+        5  0.12070  -0.045 -0.062  0.007 -0.050  1.000 -0.021 -0.002
+        6  0.20180  -0.029 -0.161 -0.017 -0.033 -0.021  1.000 -0.007
+        7  0.25254  -0.035 -0.198  0.013 -0.076 -0.002 -0.007  1.000
+ ERR MATRIX APPROXIMATE
+On point 3 / 20. mu=4, -2lnLambda=14.9431 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   19 **SET PRINT           1
+ **********
+ **********
+ **   20 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         9.88426e-01  2.30448e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -1.41024e+00  6.38395e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys   8.77257e-02  9.79739e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys   3.78783e-01  8.48922e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -5.26526e-03  9.67131e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -3.29996e-01  7.92241e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -4.75887e-01  8.10094e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   21 **SET ERR         0.5
+ **********
+ **********
+ **   22 **SET PRINT           1
+ **********
+ **********
+ **   23 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   24 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=20.364 FROM MIGRAD    STATUS=INITIATE       26 CALLS          27 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.88426e-01   2.30448e-02   7.72197e-03   1.56392e+02
+   2  alpha_sample_fakes_sys  -1.41024e+00   6.38395e-01   1.33583e-01   1.16137e+01
+   3  alpha_sample_tth_sys   8.77257e-02   9.79739e-01   1.97256e-01   1.27861e+00
+   4  alpha_sample_ttw_sys   3.78783e-01   8.48922e-01   1.71122e-01   5.55819e+00
+   5  alpha_sample_ttz_sys  -5.26526e-03   9.67131e-01   1.94653e-01   1.83301e+00
+   6  alpha_sample_tz_sys  -3.29996e-01   7.92241e-01   1.59479e-01   3.69763e+00
+   7  alpha_sample_wz_sys  -4.75887e-01   8.10094e-01   1.63506e-01   3.52050e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=18.664 FROM MIGRAD    STATUS=CONVERGED      74 CALLS          75 TOTAL
+                     EDM=2.79964e-05    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  16.7 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.68928e-01   2.30797e-02   1.85375e-04  -3.97064e-01
+   2  alpha_sample_fakes_sys  -2.03038e+00   6.58416e-01  -5.75936e-03   9.27338e-03
+   3  alpha_sample_tth_sys  -1.89726e-02   9.66482e-01  -6.28178e-03  -1.29066e-02
+   4  alpha_sample_ttw_sys  -7.45134e-02   8.28336e-01  -3.72668e-04   1.18467e-02
+   5  alpha_sample_ttz_sys  -1.66775e-01   9.54854e-01  -5.68819e-03  -6.28147e-03
+   6  alpha_sample_tz_sys  -5.98363e-01   7.92039e-01  -3.26232e-05   1.36900e-02
+   7  alpha_sample_wz_sys  -7.48410e-01   7.82968e-01   1.05745e-03   7.72163e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.327e-04 -2.942e-03 -1.558e-03 -1.668e-03 -1.757e-03 -1.048e-03 -6.584e-04 
+ -2.942e-03  4.365e-01 -7.109e-03 -8.814e-02 -1.586e-02 -5.176e-02 -4.754e-02 
+ -1.558e-03 -7.109e-03  9.460e-01 -1.126e-02 -1.624e-02 -8.005e-04 -6.769e-03 
+ -1.668e-03 -8.814e-02 -1.126e-02  6.925e-01 -1.358e-02 -1.619e-02 -1.893e-02 
+ -1.757e-03 -1.586e-02 -1.624e-02 -1.358e-02  9.231e-01 -2.770e-03 -9.769e-03 
+ -1.048e-03 -5.176e-02 -8.005e-04 -1.619e-02 -2.770e-03  6.327e-01 -1.174e-02 
+ -6.584e-04 -4.754e-02 -6.769e-03 -1.893e-02 -9.769e-03 -1.174e-02  6.182e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.27475   1.000 -0.193 -0.069 -0.087 -0.079 -0.057 -0.036
+        2  0.31096  -0.193  1.000 -0.011 -0.160 -0.025 -0.098 -0.092
+        3  0.08383  -0.069 -0.011  1.000 -0.014 -0.017 -0.001 -0.009
+        4  0.21705  -0.087 -0.160 -0.014  1.000 -0.017 -0.024 -0.029
+        5  0.10162  -0.079 -0.025 -0.017 -0.017  1.000 -0.004 -0.013
+        6  0.14077  -0.057 -0.098 -0.001 -0.024 -0.004  1.000 -0.019
+        7  0.12646  -0.036 -0.092 -0.009 -0.029 -0.013 -0.019  1.000
+ ERR MATRIX APPROXIMATE
+On point 4 / 20. mu=6, -2lnLambda=34.0066 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   25 **SET PRINT           1
+ **********
+ **********
+ **   26 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         9.68928e-01  2.30797e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -2.03038e+00  6.58416e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -1.89726e-02  9.66482e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -7.45134e-02  8.28336e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -1.66775e-01  9.54854e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -5.98363e-01  7.92039e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -7.48410e-01  7.82968e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   27 **SET ERR         0.5
+ **********
+ **********
+ **   28 **SET PRINT           1
+ **********
+ **********
+ **   29 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   30 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=32.7525 FROM MIGRAD    STATUS=INITIATE       26 CALLS          27 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.68928e-01   2.30797e-02   7.80269e-03   1.54608e+02
+   2  alpha_sample_fakes_sys  -2.03038e+00   6.58416e-01   1.44909e-01   7.00719e+00
+   3  alpha_sample_tth_sys  -1.89726e-02   9.66482e-01   1.94522e-01   1.08605e+00
+   4  alpha_sample_ttw_sys  -7.45134e-02   8.28336e-01   1.66454e-01   4.55734e+00
+   5  alpha_sample_ttz_sys  -1.66775e-01   9.54854e-01   1.92264e-01   1.51573e+00
+   6  alpha_sample_tz_sys  -5.98363e-01   7.92039e-01   1.60270e-01   2.76376e+00
+   7  alpha_sample_wz_sys  -7.48410e-01   7.82968e-01   1.59095e-01   2.53331e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=31.5274 FROM MIGRAD    STATUS=CONVERGED      74 CALLS          75 TOTAL
+                     EDM=5.2822e-06    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  16.3 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.46180e-01   2.29101e-02   1.21454e-05  -1.59787e-01
+   2  alpha_sample_fakes_sys  -2.43600e+00   6.16291e-01  -1.46163e-03   1.16557e-02
+   3  alpha_sample_tth_sys  -1.22302e-01   9.65361e-01  -1.88367e-03  -4.49840e-03
+   4  alpha_sample_ttw_sys  -4.92575e-01   8.40700e-01   1.11875e-03   2.28678e-03
+   5  alpha_sample_ttz_sys  -3.15303e-01   9.52852e-01  -1.53067e-03  -2.24311e-03
+   6  alpha_sample_tz_sys  -8.11968e-01   7.92430e-01   5.17244e-04   4.31232e-03
+   7  alpha_sample_wz_sys  -9.50850e-01   7.84328e-01   6.12193e-04   3.55169e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.249e-04 -7.492e-04 -1.937e-03 -1.907e-03 -2.099e-03 -1.358e-03 -1.004e-03 
+ -7.492e-04  3.824e-01  2.106e-02 -9.436e-02  1.043e-02 -4.738e-02 -4.404e-02 
+ -1.937e-03  2.106e-02  9.437e-01 -2.040e-02 -1.078e-02  1.767e-03 -1.093e-03 
+ -1.907e-03 -9.436e-02 -2.040e-02  7.136e-01 -2.344e-02 -5.593e-03 -4.548e-03 
+ -2.099e-03  1.043e-02 -1.078e-02 -2.344e-02  9.192e-01 -1.062e-03 -4.176e-03 
+ -1.358e-03 -4.738e-02  1.767e-03 -5.593e-03 -1.062e-03  6.334e-01 -4.094e-03 
+ -1.004e-03 -4.404e-02 -1.093e-03 -4.548e-03 -4.176e-03 -4.094e-03  6.205e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.20794   1.000 -0.053 -0.087 -0.099 -0.096 -0.074 -0.056
+        2  0.24151  -0.053  1.000  0.035 -0.181  0.018 -0.096 -0.090
+        3  0.09898  -0.087  0.035  1.000 -0.025 -0.012  0.002 -0.001
+        4  0.22058  -0.099 -0.181 -0.025  1.000 -0.029 -0.008 -0.007
+        5  0.10632  -0.096  0.018 -0.012 -0.029  1.000 -0.001 -0.006
+        6  0.13188  -0.074 -0.096  0.002 -0.008 -0.001  1.000 -0.007
+        7  0.11555  -0.056 -0.090 -0.001 -0.007 -0.006 -0.007  1.000
+ ERR MATRIX APPROXIMATE
+On point 5 / 20. mu=8, -2lnLambda=59.7334 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   31 **SET PRINT           1
+ **********
+ **********
+ **   32 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         9.46180e-01  2.29101e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -2.43600e+00  6.16291e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -1.22302e-01  9.65361e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -4.92575e-01  8.40700e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -3.15303e-01  9.52852e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -8.11968e-01  7.92430e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -9.50850e-01  7.84328e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   33 **SET ERR         0.5
+ **********
+ **********
+ **   34 **SET PRINT           1
+ **********
+ **********
+ **   35 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   36 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=48.0094 FROM MIGRAD    STATUS=INITIATE       28 CALLS          29 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.46180e-01   2.29101e-02   7.82807e-03   1.53208e+02
+   2  alpha_sample_fakes_sys  -2.43600e+00   6.16291e-01   1.42071e-01   4.60662e+00
+   3  alpha_sample_tth_sys  -1.22302e-01   9.65361e-01   1.94353e-01   9.25487e-01
+   4  alpha_sample_ttw_sys  -4.92575e-01   8.40700e-01   1.69801e-01   3.65074e+00
+   5  alpha_sample_ttz_sys  -3.15303e-01   9.52852e-01   1.92145e-01   1.24942e+00
+   6  alpha_sample_tz_sys  -8.11968e-01   7.92430e-01   1.61375e-01   2.08007e+00
+   7  alpha_sample_wz_sys  -9.50850e-01   7.84328e-01   1.60549e-01   1.86649e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=47.0164 FROM MIGRAD    STATUS=CONVERGED      76 CALLS          77 TOTAL
+                     EDM=3.16125e-06    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  15.8 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.21474e-01   2.40442e-02  -2.79988e-05   2.03418e-02
+   2  alpha_sample_fakes_sys  -2.70649e+00   6.17134e-01   1.49412e-03  -9.56730e-03
+   3  alpha_sample_tth_sys  -2.15417e-01   9.62151e-01  -1.59873e-03  -4.10310e-03
+   4  alpha_sample_ttw_sys  -8.32103e-01   8.41258e-01   1.13088e-03   3.07918e-03
+   5  alpha_sample_ttz_sys  -4.40318e-01   9.46588e-01  -1.36889e-03  -2.52351e-03
+   6  alpha_sample_tz_sys  -9.68652e-01   7.90360e-01   1.72541e-04   3.41204e-03
+   7  alpha_sample_wz_sys  -1.09371e+00   7.82939e-01   2.94883e-04   3.12986e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.781e-04 -2.037e-03 -7.033e-04 -3.505e-03 -1.082e-03 -1.850e-03 -1.621e-03 
+ -2.037e-03  3.836e-01 -4.389e-02  1.963e-02 -4.411e-02 -9.282e-03 -3.519e-03 
+ -7.033e-04 -4.389e-02  9.374e-01 -1.009e-02 -1.391e-02  4.278e-03  3.204e-03 
+ -3.505e-03  1.963e-02 -1.009e-02  7.147e-01 -1.343e-02 -7.113e-03 -5.276e-03 
+ -1.082e-03 -4.411e-02 -1.391e-02 -1.343e-02  9.070e-01  3.028e-03  1.625e-03 
+ -1.850e-03 -9.282e-03  4.278e-03 -7.113e-03  3.028e-03  6.302e-01 -1.888e-03 
+ -1.621e-03 -3.519e-03  3.204e-03 -5.276e-03  1.625e-03 -1.888e-03  6.183e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.26484   1.000 -0.137 -0.030 -0.172 -0.047 -0.097 -0.086
+        2  0.18172  -0.137  1.000 -0.073  0.037 -0.075 -0.019 -0.007
+        3  0.08850  -0.030 -0.073  1.000 -0.012 -0.015  0.006  0.004
+        4  0.17901  -0.172  0.037 -0.012  1.000 -0.017 -0.011 -0.008
+        5  0.10059  -0.047 -0.075 -0.015 -0.017  1.000  0.004  0.002
+        6  0.10660  -0.097 -0.019  0.006 -0.011  0.004  1.000 -0.003
+        7  0.09171  -0.086 -0.007  0.004 -0.008  0.002 -0.003  1.000
+ ERR MATRIX APPROXIMATE
+On point 6 / 20. mu=10, -2lnLambda=90.7115 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   37 **SET PRINT           1
+ **********
+ **********
+ **   38 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         9.21474e-01  2.40442e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -2.70649e+00  6.17134e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -2.15417e-01  9.62151e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -8.32103e-01  8.41258e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -4.40318e-01  9.46588e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -9.68652e-01  7.90360e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.09371e+00  7.82939e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   39 **SET ERR         0.5
+ **********
+ **********
+ **   40 **SET PRINT           1
+ **********
+ **********
+ **   41 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   42 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=65.3422 FROM MIGRAD    STATUS=INITIATE       28 CALLS          29 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         9.21474e-01   2.40442e-02   8.31372e-03   1.51579e+02
+   2  alpha_sample_fakes_sys  -2.70649e+00   6.17134e-01   1.48012e-01   3.22537e+00
+   3  alpha_sample_tth_sys  -2.15417e-01   9.62151e-01   1.93827e-01   7.80403e-01
+   4  alpha_sample_ttw_sys  -8.32103e-01   8.41258e-01   1.71544e-01   2.93927e+00
+   5  alpha_sample_ttz_sys  -4.40318e-01   9.46588e-01   1.91248e-01   1.03050e+00
+   6  alpha_sample_tz_sys  -9.68652e-01   7.90360e-01   1.61915e-01   1.61360e+00
+   7  alpha_sample_wz_sys  -1.09371e+00   7.82939e-01   1.61279e-01   1.42621e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=64.4685 FROM MIGRAD    STATUS=CONVERGED      76 CALLS          77 TOTAL
+                     EDM=2.32124e-06    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  15.7 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.95606e-01   2.39336e-02  -3.49019e-06   2.05244e-02
+   2  alpha_sample_fakes_sys  -2.88608e+00   6.43762e-01   2.37353e-03  -5.34308e-03
+   3  alpha_sample_tth_sys  -2.92696e-01   9.62267e-01  -1.69871e-03  -3.76994e-03
+   4  alpha_sample_ttw_sys  -1.09616e+00   8.39824e-01   8.94309e-04   4.61257e-03
+   5  alpha_sample_ttz_sys  -5.39450e-01   9.43471e-01  -1.57412e-03  -2.45836e-03
+   6  alpha_sample_tz_sys  -1.08189e+00   7.89870e-01  -2.71564e-04   3.18117e-03
+   7  alpha_sample_wz_sys  -1.19361e+00   7.83045e-01  -1.12345e-04   2.97277e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.728e-04 -2.212e-03 -8.908e-04 -3.209e-03 -1.252e-03 -1.687e-03 -1.490e-03 
+ -2.212e-03  4.179e-01 -2.518e-02  1.537e-02 -2.701e-02 -1.112e-02 -6.870e-03 
+ -8.908e-04 -2.518e-02  9.377e-01 -2.220e-03 -1.231e-02  2.718e-03  2.495e-03 
+ -3.209e-03  1.537e-02 -2.220e-03  7.124e-01 -3.894e-03 -4.210e-03 -3.197e-03 
+ -1.252e-03 -2.701e-02 -1.231e-02 -3.894e-03  9.010e-01  3.290e-03  2.758e-03 
+ -1.687e-03 -1.112e-02  2.718e-03 -4.210e-03  3.290e-03  6.294e-01  1.589e-03 
+ -1.490e-03 -6.870e-03  2.495e-03 -3.197e-03  2.758e-03  1.589e-03  6.185e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.25593   1.000 -0.143 -0.038 -0.159 -0.055 -0.089 -0.079
+        2  0.16476  -0.143  1.000 -0.040  0.028 -0.044 -0.022 -0.014
+        3  0.06339  -0.038 -0.040  1.000 -0.003 -0.013  0.004  0.003
+        4  0.16198  -0.159  0.028 -0.003  1.000 -0.005 -0.006 -0.005
+        5  0.07941  -0.055 -0.044 -0.013 -0.005  1.000  0.004  0.004
+        6  0.09778  -0.089 -0.022  0.004 -0.006  0.004  1.000  0.003
+        7  0.08509  -0.079 -0.014  0.003 -0.005  0.004  0.003  1.000
+ ERR MATRIX APPROXIMATE
+On point 7 / 20. mu=12, -2lnLambda=125.616 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   43 **SET PRINT           1
+ **********
+ **********
+ **   44 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         8.95606e-01  2.39336e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -2.88608e+00  6.43762e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -2.92696e-01  9.62267e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.09616e+00  8.39824e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -5.39450e-01  9.43471e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.08189e+00  7.89870e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.19361e+00  7.83045e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   45 **SET ERR         0.5
+ **********
+ **********
+ **   46 **SET PRINT           1
+ **********
+ **********
+ **   47 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   48 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=84.1375 FROM MIGRAD    STATUS=INITIATE       28 CALLS          29 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.95606e-01   2.39336e-02   8.38223e-03   1.49649e+02
+   2  alpha_sample_fakes_sys  -2.88608e+00   6.43762e-01   1.59372e-01   2.40513e+00
+   3  alpha_sample_tth_sys  -2.92696e-01   9.62267e-01   1.94012e-01   6.60556e-01
+   4  alpha_sample_ttw_sys  -1.09616e+00   8.39824e-01   1.73150e-01   2.39493e+00
+   5  alpha_sample_ttz_sys  -5.39450e-01   9.43471e-01   1.91003e-01   8.57885e-01
+   6  alpha_sample_tz_sys  -1.08189e+00   7.89870e-01   1.62630e-01   1.28579e+00
+   7  alpha_sample_wz_sys  -1.19361e+00   7.83045e-01   1.62111e-01   1.12457e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=83.3292 FROM MIGRAD    STATUS=CONVERGED      76 CALLS          77 TOTAL
+                     EDM=1.12489e-06    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  15.4 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.69131e-01   2.37662e-02   1.23012e-05   1.89616e-02
+   2  alpha_sample_fakes_sys  -3.00726e+00   6.46089e-01   2.25772e-03  -3.09764e-03
+   3  alpha_sample_tth_sys  -3.54028e-01   9.62972e-01  -1.59087e-03  -2.56576e-03
+   4  alpha_sample_ttw_sys  -1.29684e+00   8.45717e-01   6.65522e-04   3.53830e-03
+   5  alpha_sample_ttz_sys  -6.15259e-01   9.42773e-01  -1.54068e-03  -1.64931e-03
+   6  alpha_sample_tz_sys  -1.16269e+00   7.89307e-01  -4.88401e-04   2.28919e-03
+   7  alpha_sample_wz_sys  -1.26264e+00   7.83115e-01  -3.43970e-04   2.08017e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.648e-04 -2.134e-03 -9.344e-04 -3.122e-03 -1.283e-03 -1.601e-03 -1.428e-03 
+ -2.134e-03  4.211e-01 -1.758e-02  1.592e-02 -1.909e-02 -8.993e-03 -5.846e-03 
+ -9.344e-04 -1.758e-02  9.391e-01 -1.202e-03 -8.957e-03  2.287e-03  2.051e-03 
+ -3.122e-03  1.592e-02 -1.202e-03  7.227e-01 -1.529e-03 -6.430e-04  1.409e-04 
+ -1.283e-03 -1.909e-02 -8.957e-03 -1.529e-03  8.997e-01  3.565e-03  3.084e-03 
+ -1.601e-03 -8.993e-03  2.287e-03 -6.430e-04  3.565e-03  6.286e-01  3.527e-03 
+ -1.428e-03 -5.846e-03  2.051e-03  1.409e-04  3.084e-03  3.527e-03  6.187e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.24731   1.000 -0.138 -0.041 -0.155 -0.057 -0.085 -0.076
+        2  0.15234  -0.138  1.000 -0.028  0.029 -0.031 -0.017 -0.011
+        3  0.05512  -0.041 -0.028  1.000 -0.001 -0.010  0.003  0.003
+        4  0.15631  -0.155  0.029 -0.001  1.000 -0.002 -0.001  0.000
+        5  0.07126  -0.057 -0.031 -0.010 -0.002  1.000  0.005  0.004
+        6  0.09108  -0.085 -0.017  0.003 -0.001  0.005  1.000  0.006
+        7  0.08043  -0.076 -0.011  0.003  0.000  0.004  0.006  1.000
+ ERR MATRIX APPROXIMATE
+On point 8 / 20. mu=14, -2lnLambda=163.337 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   49 **SET PRINT           1
+ **********
+ **********
+ **   50 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         8.69131e-01  2.37662e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.00726e+00  6.46089e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -3.54028e-01  9.62972e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.29684e+00  8.45717e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -6.15259e-01  9.42773e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.16269e+00  7.89307e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.26264e+00  7.83115e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   51 **SET ERR         0.5
+ **********
+ **********
+ **   52 **SET PRINT           1
+ **********
+ **********
+ **   53 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   54 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=103.921 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.69131e-01   2.37662e-02   8.43722e-03   1.47634e+02
+   2  alpha_sample_fakes_sys  -3.00726e+00   6.46089e-01   1.63739e-01   1.87270e+00
+   3  alpha_sample_tth_sys  -3.54028e-01   9.62972e-01   1.94319e-01   5.64023e-01
+   4  alpha_sample_ttw_sys  -1.29684e+00   8.45717e-01   1.76249e-01   1.97847e+00
+   5  alpha_sample_ttz_sys  -6.15259e-01   9.42773e-01   1.91217e-01   7.22888e-01
+   6  alpha_sample_tz_sys  -1.16269e+00   7.89307e-01   1.63160e-01   1.04860e+00
+   7  alpha_sample_wz_sys  -1.26264e+00   7.83115e-01   1.62735e-01   9.10033e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=103.152 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=5.29473e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  15.1 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.42361e-01   2.35931e-02   1.79490e-05   1.46226e-02
+   2  alpha_sample_fakes_sys  -3.08788e+00   6.46471e-01   1.94481e-03  -1.92710e-03
+   3  alpha_sample_tth_sys  -4.01322e-01   9.63348e-01  -1.44302e-03  -1.75596e-03
+   4  alpha_sample_ttw_sys  -1.44609e+00   8.51753e-01   4.80547e-04   2.45846e-03
+   5  alpha_sample_ttz_sys  -6.71588e-01   9.42523e-01  -1.43844e-03  -1.11632e-03
+   6  alpha_sample_tz_sys  -1.21908e+00   7.89082e-01  -5.74830e-04   1.61665e-03
+   7  alpha_sample_wz_sys  -1.30901e+00   7.83387e-01  -4.52834e-04   1.42664e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.566e-04 -2.070e-03 -9.553e-04 -3.060e-03 -1.292e-03 -1.537e-03 -1.381e-03 
+ -2.070e-03  4.217e-01 -1.315e-02  1.690e-02 -1.420e-02 -6.650e-03 -4.262e-03 
+ -9.553e-04 -1.315e-02  9.398e-01 -5.716e-04 -6.662e-03  2.361e-03  2.054e-03 
+ -3.060e-03  1.690e-02 -5.716e-04  7.333e-01 -5.430e-05  1.807e-03  2.406e-03 
+ -1.292e-03 -1.420e-02 -6.662e-03 -5.430e-05  8.993e-01  3.968e-03  3.451e-03 
+ -1.537e-03 -6.650e-03  2.361e-03  1.807e-03  3.968e-03  6.282e-01  4.582e-03 
+ -1.381e-03 -4.262e-03  2.054e-03  2.406e-03  3.451e-03  4.582e-03  6.192e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.24101   1.000 -0.135 -0.042 -0.151 -0.058 -0.082 -0.074
+        2  0.14470  -0.135  1.000 -0.021  0.030 -0.023 -0.013 -0.008
+        3  0.05121  -0.042 -0.021  1.000 -0.001 -0.007  0.003  0.003
+        4  0.15269  -0.151  0.030 -0.001  1.000 -0.000  0.003  0.004
+        5  0.06700  -0.058 -0.023 -0.007 -0.000  1.000  0.005  0.005
+        6  0.08623  -0.082 -0.013  0.003  0.003  0.005  1.000  0.007
+        7  0.07703  -0.074 -0.008  0.003  0.004  0.005  0.007  1.000
+ ERR MATRIX APPROXIMATE
+On point 9 / 20. mu=16, -2lnLambda=202.983 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   55 **SET PRINT           1
+ **********
+ **********
+ **   56 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         8.42361e-01  2.35931e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.08788e+00  6.46471e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.01322e-01  9.63348e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.44609e+00  8.51753e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -6.71588e-01  9.42523e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.21908e+00  7.89082e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.30901e+00  7.83387e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   57 **SET ERR         0.5
+ **********
+ **********
+ **   58 **SET PRINT           1
+ **********
+ **********
+ **   59 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   60 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=124.326 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.42361e-01   2.35931e-02   8.49540e-03   1.45551e+02
+   2  alpha_sample_fakes_sys  -3.08788e+00   6.46471e-01   1.66612e-01   1.50916e+00
+   3  alpha_sample_tth_sys  -4.01322e-01   9.63348e-01   1.94542e-01   4.85464e-01
+   4  alpha_sample_ttw_sys  -1.44609e+00   8.51753e-01   1.79180e-01   1.65926e+00
+   5  alpha_sample_ttz_sys  -6.71588e-01   9.42523e-01   1.91462e-01   6.15942e-01
+   6  alpha_sample_tz_sys  -1.21908e+00   7.89082e-01   1.63596e-01   8.72922e-01
+   7  alpha_sample_wz_sys  -1.30901e+00   7.83387e-01   1.63226e-01   7.53130e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=123.582 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=2.54936e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  14.9 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.15506e-01   2.34124e-02   1.86223e-05   1.04477e-02
+   2  alpha_sample_fakes_sys  -3.13922e+00   6.47103e-01   1.63026e-03  -1.26183e-03
+   3  alpha_sample_tth_sys  -4.36575e-01   9.63680e-01  -1.29998e-03  -1.24258e-03
+   4  alpha_sample_ttw_sys  -1.55437e+00   8.57241e-01   3.33392e-04   1.66208e-03
+   5  alpha_sample_ttz_sys  -7.11869e-01   9.42597e-01  -1.32251e-03  -7.87999e-04
+   6  alpha_sample_tz_sys  -1.25691e+00   7.89281e-01  -5.95374e-04   1.15565e-03
+   7  alpha_sample_wz_sys  -1.33843e+00   7.83991e-01  -4.93499e-04   9.94352e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.482e-04 -2.026e-03 -9.658e-04 -3.004e-03 -1.291e-03 -1.486e-03 -1.342e-03 
+ -2.026e-03  4.227e-01 -1.011e-02  1.747e-02 -1.074e-02 -4.577e-03 -2.743e-03 
+ -9.658e-04 -1.011e-02  9.405e-01 -9.899e-05 -5.051e-03  2.515e-03  2.156e-03 
+ -3.004e-03  1.747e-02 -9.899e-05  7.430e-01  9.596e-04  3.458e-03  3.894e-03 
+ -1.291e-03 -1.074e-02 -5.051e-03  9.596e-04  8.994e-01  4.270e-03  3.724e-03 
+ -1.486e-03 -4.577e-03  2.515e-03  3.458e-03  4.270e-03  6.286e-01  5.141e-03 
+ -1.342e-03 -2.743e-03  2.156e-03  3.894e-03  3.724e-03  5.141e-03  6.201e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.23632   1.000 -0.133 -0.043 -0.149 -0.058 -0.080 -0.073
+        2  0.13985  -0.133  1.000 -0.016  0.031 -0.017 -0.009 -0.005
+        3  0.04901  -0.043 -0.016  1.000 -0.000 -0.005  0.003  0.003
+        4  0.14984  -0.149  0.031 -0.000  1.000  0.001  0.005  0.006
+        5  0.06442  -0.058 -0.017 -0.005  0.001  1.000  0.006  0.005
+        6  0.08273  -0.080 -0.009  0.003  0.005  0.006  1.000  0.008
+        7  0.07457  -0.073 -0.005  0.003  0.006  0.005  0.008  1.000
+ ERR MATRIX APPROXIMATE
+On point 10 / 20. mu=18, -2lnLambda=243.843 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   61 **SET PRINT           1
+ **********
+ **********
+ **   62 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         8.15506e-01  2.34124e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.13922e+00  6.47103e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.36575e-01  9.63680e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.55437e+00  8.57241e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.11869e-01  9.42597e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.25691e+00  7.89281e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.33843e+00  7.83991e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   63 **SET ERR         0.5
+ **********
+ **********
+ **   64 **SET PRINT           1
+ **********
+ **********
+ **   65 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   66 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=145.063 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         8.15506e-01   2.34124e-02   8.55553e-03   1.43418e+02
+   2  alpha_sample_fakes_sys  -3.13922e+00   6.47103e-01   1.68668e-01   1.25068e+00
+   3  alpha_sample_tth_sys  -4.36575e-01   9.63680e-01   1.94732e-01   4.21258e-01
+   4  alpha_sample_ttw_sys  -1.55437e+00   8.57241e-01   1.81711e-01   1.41188e+00
+   5  alpha_sample_ttz_sys  -7.11869e-01   9.42597e-01   1.91706e-01   5.30381e-01
+   6  alpha_sample_tz_sys  -1.25691e+00   7.89281e-01   1.63978e-01   7.39669e-01
+   7  alpha_sample_wz_sys  -1.33843e+00   7.83991e-01   1.63638e-01   6.35225e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=144.338 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=1.27929e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  14.7 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.88714e-01   2.32225e-02   1.73052e-05   7.27914e-03
+   2  alpha_sample_fakes_sys  -3.16871e+00   6.48305e-01   1.36002e-03  -8.65573e-04
+   3  alpha_sample_tth_sys  -4.61699e-01   9.64067e-01  -1.17142e-03  -9.09790e-04
+   4  alpha_sample_ttw_sys  -1.62997e+00   8.62163e-01   2.15767e-04   1.11830e-03
+   5  alpha_sample_ttz_sys  -7.39029e-01   9.42932e-01  -1.20995e-03  -5.80098e-04
+   6  alpha_sample_tz_sys  -1.28040e+00   7.89915e-01  -5.83420e-04   8.42120e-04
+   7  alpha_sample_wz_sys  -1.35491e+00   7.84963e-01  -4.98022e-04   7.10035e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.393e-04 -1.995e-03 -9.689e-04 -2.952e-03 -1.283e-03 -1.445e-03 -1.311e-03 
+ -1.995e-03  4.243e-01 -7.865e-03  1.764e-02 -8.157e-03 -2.838e-03 -1.422e-03 
+ -9.689e-04 -7.865e-03  9.413e-01  2.604e-04 -3.893e-03  2.631e-03  2.249e-03 
+ -2.952e-03  1.764e-02  2.604e-04  7.517e-01  1.670e-03  4.589e-03  4.881e-03 
+ -1.283e-03 -8.157e-03 -3.893e-03  1.670e-03  9.001e-01  4.436e-03  3.883e-03 
+ -1.445e-03 -2.838e-03  2.631e-03  4.589e-03  4.436e-03  6.296e-01  5.406e-03 
+ -1.311e-03 -1.422e-03  2.249e-03  4.881e-03  3.883e-03  5.406e-03  6.217e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.23281   1.000 -0.132 -0.043 -0.147 -0.058 -0.078 -0.072
+        2  0.13675  -0.132  1.000 -0.012  0.031 -0.013 -0.005 -0.003
+        3  0.04764  -0.043 -0.012  1.000  0.000 -0.004  0.003  0.003
+        4  0.14748  -0.147  0.031  0.000  1.000  0.002  0.007  0.007
+        5  0.06269  -0.058 -0.013 -0.004  0.002  1.000  0.006  0.005
+        6  0.08021  -0.078 -0.005  0.003  0.007  0.006  1.000  0.009
+        7  0.07279  -0.072 -0.003  0.003  0.007  0.005  0.009  1.000
+ ERR MATRIX APPROXIMATE
+On point 11 / 20. mu=20, -2lnLambda=285.354 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   67 **SET PRINT           1
+ **********
+ **********
+ **   68 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         7.88714e-01  2.32225e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.16871e+00  6.48305e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.61699e-01  9.64067e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.62997e+00  8.62163e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.39029e-01  9.42932e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.28040e+00  7.89915e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.35491e+00  7.84963e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   69 **SET ERR         0.5
+ **********
+ **********
+ **   70 **SET PRINT           1
+ **********
+ **********
+ **   71 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   72 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=165.905 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.88714e-01   2.32225e-02   8.61656e-03   1.41245e+02
+   2  alpha_sample_fakes_sys  -3.16871e+00   6.48305e-01   1.70124e-01   1.06065e+00
+   3  alpha_sample_tth_sys  -4.61699e-01   9.64067e-01   1.94905e-01   3.68448e-01
+   4  alpha_sample_ttw_sys  -1.62997e+00   8.62163e-01   1.83806e-01   1.21751e+00
+   5  alpha_sample_ttz_sys  -7.39029e-01   9.42932e-01   1.91937e-01   4.61190e-01
+   6  alpha_sample_tz_sys  -1.28040e+00   7.89915e-01   1.64329e-01   6.36381e-01
+   7  alpha_sample_wz_sys  -1.35491e+00   7.84963e-01   1.64006e-01   5.44477e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=165.195 FROM MIGRAD    STATUS=CONVERGED      62 CALLS          63 TOTAL
+                     EDM=6.75306e-08    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  14.6 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.62096e-01   2.30226e-02   1.53669e-05   5.07378e-03
+   2  alpha_sample_fakes_sys  -3.18143e+00   6.50043e-01   1.13905e-03  -6.23391e-04
+   3  alpha_sample_tth_sys  -4.78380e-01   9.64534e-01  -1.05848e-03  -6.86687e-04
+   4  alpha_sample_ttw_sys  -1.67939e+00   8.66623e-01   1.20833e-04   7.55165e-04
+   5  alpha_sample_ttz_sys  -7.55479e-01   9.43481e-01  -1.10633e-03  -4.42789e-04
+   6  alpha_sample_tz_sys  -1.29263e+00   7.90966e-01  -5.56099e-04   6.26410e-04
+   7  alpha_sample_wz_sys  -1.36131e+00   7.86297e-01  -4.83976e-04   5.20192e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.301e-04 -1.974e-03 -9.664e-04 -2.905e-03 -1.272e-03 -1.412e-03 -1.286e-03 
+ -1.974e-03  4.266e-01 -6.167e-03  1.755e-02 -6.186e-03 -1.411e-03 -3.164e-04 
+ -9.664e-04 -6.167e-03  9.422e-01  5.401e-04 -3.046e-03  2.690e-03  2.307e-03 
+ -2.905e-03  1.755e-02  5.401e-04  7.597e-01  2.178e-03  5.385e-03  5.555e-03 
+ -1.272e-03 -6.186e-03 -3.046e-03  2.178e-03  9.012e-01  4.488e-03  3.950e-03 
+ -1.412e-03 -1.411e-03  2.690e-03  5.385e-03  4.488e-03  6.313e-01  5.498e-03 
+ -1.286e-03 -3.164e-04  2.307e-03  5.555e-03  3.950e-03  5.498e-03  6.238e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.23019   1.000 -0.131 -0.043 -0.145 -0.058 -0.077 -0.071
+        2  0.13481  -0.131  1.000 -0.010  0.031 -0.010 -0.003 -0.001
+        3  0.04668  -0.043 -0.010  1.000  0.001 -0.003  0.003  0.003
+        4  0.14552  -0.145  0.031  0.001  1.000  0.003  0.008  0.008
+        5  0.06143  -0.058 -0.010 -0.003  0.003  1.000  0.006  0.005
+        6  0.07839  -0.077 -0.003  0.003  0.008  0.006  1.000  0.009
+        7  0.07151  -0.071 -0.001  0.003  0.008  0.005  0.009  1.000
+ ERR MATRIX APPROXIMATE
+On point 12 / 20. mu=22, -2lnLambda=327.07 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   73 **SET PRINT           1
+ **********
+ **********
+ **   74 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         7.62096e-01  2.30226e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.18143e+00  6.50043e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.78380e-01  9.64534e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.67939e+00  8.66623e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.55479e-01  9.43481e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.29263e+00  7.90966e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.36131e+00  7.86297e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   75 **SET ERR         0.5
+ **********
+ **********
+ **   76 **SET PRINT           1
+ **********
+ **********
+ **   77 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   78 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=186.673 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.62096e-01   2.30226e-02   8.67780e-03   1.39040e+02
+   2  alpha_sample_fakes_sys  -3.18143e+00   6.50043e-01   1.71096e-01   9.16967e-01
+   3  alpha_sample_tth_sys  -4.78380e-01   9.64534e-01   1.95065e-01   3.24676e-01
+   4  alpha_sample_ttw_sys  -1.67939e+00   8.66623e-01   1.85490e-01   1.06258e+00
+   5  alpha_sample_ttz_sys  -7.55479e-01   9.43481e-01   1.92153e-01   4.04618e-01
+   6  alpha_sample_tz_sys  -1.29263e+00   7.90966e-01   1.64666e-01   5.54768e-01
+   7  alpha_sample_wz_sys  -1.36131e+00   7.86297e-01   1.64353e-01   4.73163e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=185.977 FROM MIGRAD    STATUS=CONVERGED      61 CALLS          62 TOTAL
+                     EDM=2.16039e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  14.4 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.35737e-01   2.28118e-02   1.27780e-05  -3.79091e-03
+   2  alpha_sample_fakes_sys  -3.18111e+00   6.52210e-01   9.17760e-04  -2.01974e-03
+   3  alpha_sample_tth_sys  -4.87840e-01   9.65083e-01  -9.16286e-04   5.89505e-04
+   4  alpha_sample_ttw_sys  -1.70766e+00   8.70738e-01   4.14426e-05   4.32624e-04
+   5  alpha_sample_ttz_sys  -7.62952e-01   9.44213e-01  -9.66995e-04   8.65533e-04
+   6  alpha_sample_tz_sys  -1.29575e+00   7.92411e-01  -4.98616e-04   1.30158e-03
+   7  alpha_sample_wz_sys  -1.35961e+00   7.87977e-01  -4.40020e-04   1.12278e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.204e-04 -1.958e-03 -9.594e-04 -2.861e-03 -1.257e-03 -1.384e-03 -1.264e-03 
+ -1.958e-03  4.295e-01 -4.876e-03  1.730e-02 -4.681e-03 -2.520e-04  5.906e-04 
+ -9.594e-04 -4.876e-03  9.433e-01  7.661e-04 -2.428e-03  2.695e-03  2.327e-03 
+ -2.861e-03  1.730e-02  7.661e-04  7.670e-01  2.552e-03  5.967e-03  6.032e-03 
+ -1.257e-03 -4.681e-03 -2.428e-03  2.552e-03  9.026e-01  4.456e-03  3.945e-03 
+ -1.384e-03 -2.520e-04  2.695e-03  5.967e-03  4.456e-03  6.336e-01  5.487e-03 
+ -1.264e-03  5.906e-04  2.327e-03  6.032e-03  3.945e-03  5.487e-03  6.265e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.22825   1.000 -0.131 -0.043 -0.143 -0.058 -0.076 -0.070
+        2  0.13368  -0.131  1.000 -0.008  0.030 -0.008 -0.000  0.001
+        3  0.04596  -0.043 -0.008  1.000  0.001 -0.003  0.003  0.003
+        4  0.14389  -0.143  0.030  0.001  1.000  0.003  0.009  0.009
+        5  0.06046  -0.058 -0.008 -0.003  0.003  1.000  0.006  0.005
+        6  0.07707  -0.076 -0.000  0.003  0.009  0.006  1.000  0.009
+        7  0.07059  -0.070  0.001  0.003  0.009  0.005  0.009  1.000
+ ERR MATRIX APPROXIMATE
+On point 13 / 20. mu=24, -2lnLambda=368.633 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   79 **SET PRINT           1
+ **********
+ **********
+ **   80 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         7.35737e-01  2.28118e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.18111e+00  6.52210e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.87840e-01  9.65083e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.70766e+00  8.70738e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.62952e-01  9.44213e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.29575e+00  7.92411e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.35961e+00  7.87977e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   81 **SET ERR         0.5
+ **********
+ **********
+ **   82 **SET PRINT           1
+ **********
+ **********
+ **   83 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   84 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=207.224 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.35737e-01   2.28118e-02   8.73863e-03   1.36800e+02
+   2  alpha_sample_fakes_sys  -3.18111e+00   6.52210e-01   1.71672e-01   8.04098e-01
+   3  alpha_sample_tth_sys  -4.87840e-01   9.65083e-01   1.95216e-01   2.89226e-01
+   4  alpha_sample_ttw_sys  -1.70766e+00   8.70738e-01   1.86812e-01   9.37273e-01
+   5  alpha_sample_ttz_sys  -7.62952e-01   9.44213e-01   1.92351e-01   3.59092e-01
+   6  alpha_sample_tz_sys  -1.29575e+00   7.92411e-01   1.65000e-01   4.90029e-01
+   7  alpha_sample_wz_sys  -1.35961e+00   7.87977e-01   1.64691e-01   4.16849e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=206.541 FROM MIGRAD    STATUS=CONVERGED      61 CALLS          62 TOTAL
+                     EDM=1.30556e-07    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  14.3 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.09709e-01   2.25896e-02   1.11583e-05  -2.39772e-03
+   2  alpha_sample_fakes_sys  -3.16997e+00   6.54735e-01   7.82273e-04  -1.51430e-03
+   3  alpha_sample_tth_sys  -4.91769e-01   9.65705e-01  -8.37120e-04   4.66753e-04
+   4  alpha_sample_ttw_sys  -1.71868e+00   8.74610e-01  -1.98225e-05   3.52926e-04
+   5  alpha_sample_ttz_sys  -7.63541e-01   9.45095e-01  -8.90610e-04   6.88508e-04
+   6  alpha_sample_tz_sys  -1.29172e+00   7.94205e-01  -4.66196e-04   1.03635e-03
+   7  alpha_sample_wz_sys  -1.35159e+00   7.89962e-01  -4.15848e-04   8.99336e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  5.103e-04 -1.948e-03 -9.490e-04 -2.821e-03 -1.240e-03 -1.362e-03 -1.247e-03 
+ -1.948e-03  4.328e-01 -3.873e-03  1.696e-02 -3.509e-03  7.056e-04  1.346e-03 
+ -9.490e-04 -3.873e-03  9.445e-01  9.342e-04 -1.945e-03  2.676e-03  2.332e-03 
+ -2.821e-03  1.696e-02  9.342e-04  7.740e-01  2.816e-03  6.400e-03  6.378e-03 
+ -1.240e-03 -3.509e-03 -1.945e-03  2.816e-03  9.043e-01  4.388e-03  3.912e-03 
+ -1.362e-03  7.056e-04  2.676e-03  6.400e-03  4.388e-03  6.365e-01  5.430e-03 
+ -1.247e-03  1.346e-03  2.332e-03  6.378e-03  3.912e-03  5.430e-03  6.297e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.22686   1.000 -0.131 -0.043 -0.142 -0.058 -0.076 -0.070
+        2  0.13315  -0.131  1.000 -0.006  0.029 -0.006  0.001  0.003
+        3  0.04534  -0.043 -0.006  1.000  0.001 -0.002  0.003  0.003
+        4  0.14251  -0.142  0.029  0.001  1.000  0.003  0.009  0.009
+        5  0.05965  -0.058 -0.006 -0.002  0.003  1.000  0.006  0.005
+        6  0.07614  -0.076  0.001  0.003  0.009  0.006  1.000  0.009
+        7  0.06995  -0.070  0.003  0.003  0.009  0.005  0.009  1.000
+ ERR MATRIX APPROXIMATE
+On point 14 / 20. mu=26, -2lnLambda=409.76 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   85 **SET PRINT           1
+ **********
+ **********
+ **   86 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         7.09709e-01  2.25896e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.16997e+00  6.54735e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.91769e-01  9.65705e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.71868e+00  8.74610e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.63541e-01  9.45095e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.29172e+00  7.94205e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.35159e+00  7.89962e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   87 **SET ERR         0.5
+ **********
+ **********
+ **   88 **SET PRINT           1
+ **********
+ **********
+ **   89 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   90 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=227.445 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         7.09709e-01   2.25896e-02   8.79846e-03   1.34548e+02
+   2  alpha_sample_fakes_sys  -3.16997e+00   6.54735e-01   1.71915e-01   7.16671e-01
+   3  alpha_sample_tth_sys  -4.91769e-01   9.65705e-01   1.95359e-01   2.58175e-01
+   4  alpha_sample_ttw_sys  -1.71868e+00   8.74610e-01   1.87827e-01   8.34798e-01
+   5  alpha_sample_ttz_sys  -7.63541e-01   9.45095e-01   1.92536e-01   3.19813e-01
+   6  alpha_sample_tz_sys  -1.29172e+00   7.94205e-01   1.65339e-01   4.36361e-01
+   7  alpha_sample_wz_sys  -1.35159e+00   7.89962e-01   1.65030e-01   3.70321e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=226.774 FROM MIGRAD    STATUS=CONVERGED      46 CALLS          47 TOTAL
+                     EDM=8.28172e-05    STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.84048e-01   2.25896e-02  -9.09547e-04  -9.58410e-02
+   2  alpha_sample_fakes_sys  -3.15279e+00   6.54735e-01   2.26369e-02  -2.51801e-02
+   3  alpha_sample_tth_sys  -4.87071e-01   9.65705e-01   1.01446e-02   2.01936e-02
+   4  alpha_sample_ttw_sys  -1.71526e+00   8.74610e-01   2.76107e-02   1.93655e-03
+   5  alpha_sample_ttz_sys  -7.54183e-01   9.45095e-01   1.29243e-02   2.23437e-02
+   6  alpha_sample_tz_sys  -1.27961e+00   7.94205e-01   1.35216e-02   1.60704e-02
+   7  alpha_sample_wz_sys  -1.33644e+00   7.89962e-01   1.24710e-02   1.44880e-02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+On point 15 / 20. mu=28, -2lnLambda=450.227 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   91 **SET PRINT           1
+ **********
+ **********
+ **   92 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         6.84048e-01  2.25896e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.15279e+00  6.54735e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.87071e-01  9.65705e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.71526e+00  8.74610e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.54183e-01  9.45095e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.27961e+00  7.94205e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.33644e+00  7.89962e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   93 **SET ERR         0.5
+ **********
+ **********
+ **   94 **SET PRINT           1
+ **********
+ **********
+ **   95 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **   96 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=247.245 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.84048e-01   2.25896e-02   8.94971e-03   1.32182e+02
+   2  alpha_sample_fakes_sys  -3.15279e+00   6.54735e-01   1.71241e-01   6.21256e-01
+   3  alpha_sample_tth_sys  -4.87071e-01   9.65705e-01   1.95340e-01   2.51732e-01
+   4  alpha_sample_ttw_sys  -1.71526e+00   8.74610e-01   1.87774e-01   7.51448e-01
+   5  alpha_sample_ttz_sys  -7.54183e-01   9.45095e-01   1.92477e-01   3.08674e-01
+   6  alpha_sample_tz_sys  -1.27961e+00   7.94205e-01   1.65224e-01   4.07597e-01
+   7  alpha_sample_wz_sys  -1.33644e+00   7.89962e-01   1.64879e-01   3.46007e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=246.589 FROM MIGRAD    STATUS=CONVERGED      46 CALLS          47 TOTAL
+                     EDM=5.83462e-05    STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.58856e-01   2.25896e-02  -8.81208e-04  -7.64092e-02
+   2  alpha_sample_fakes_sys  -3.12512e+00   6.54735e-01   2.30487e-02  -1.90620e-02
+   3  alpha_sample_tth_sys  -4.82770e-01   9.65705e-01   9.89865e-03   1.74642e-02
+   4  alpha_sample_ttw_sys  -1.70037e+00   8.74610e-01   2.76696e-02   3.02334e-03
+   5  alpha_sample_ttz_sys  -7.44634e-01   9.45095e-01   1.26586e-02   1.93852e-02
+   6  alpha_sample_tz_sys  -1.26497e+00   7.94205e-01   1.34270e-02   1.38088e-02
+   7  alpha_sample_wz_sys  -1.31909e+00   7.89962e-01   1.24007e-02   1.25589e-02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+On point 16 / 20. mu=30, -2lnLambda=489.856 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **   97 **SET PRINT           1
+ **********
+ **********
+ **   98 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         6.58856e-01  2.25896e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.12512e+00  6.54735e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.82770e-01  9.65705e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.70037e+00  8.74610e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.44634e-01  9.45095e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.26497e+00  7.94205e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.31909e+00  7.89962e-01   -5.00000e+00  5.00000e+00
+ **********
+ **   99 **SET ERR         0.5
+ **********
+ **********
+ **  100 **SET PRINT           1
+ **********
+ **********
+ **  101 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **  102 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=266.557 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.58856e-01   2.25896e-02   9.10699e-03   1.29919e+02
+   2  alpha_sample_fakes_sys  -3.12512e+00   6.54735e-01   1.70182e-01   5.70047e-01
+   3  alpha_sample_tth_sys  -4.82770e-01   9.65705e-01   1.95323e-01   2.26532e-01
+   4  alpha_sample_ttw_sys  -1.70037e+00   8.74610e-01   1.87546e-01   6.81304e-01
+   5  alpha_sample_ttz_sys  -7.44634e-01   9.45095e-01   1.92418e-01   2.77667e-01
+   6  alpha_sample_tz_sys  -1.26497e+00   7.94205e-01   1.65087e-01   3.68307e-01
+   7  alpha_sample_wz_sys  -1.31909e+00   7.89962e-01   1.64709e-01   3.12144e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=265.914 FROM MIGRAD    STATUS=CONVERGED      46 CALLS          47 TOTAL
+                     EDM=5.03997e-05    STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.34155e-01   2.25896e-02  -8.54293e-04  -5.90506e-02
+   2  alpha_sample_fakes_sys  -3.09186e+00   6.54735e-01   2.31738e-02  -1.72177e-02
+   3  alpha_sample_tth_sys  -4.74953e-01   9.65705e-01   9.75523e-03   1.62357e-02
+   4  alpha_sample_ttw_sys  -1.67592e+00   8.74610e-01   2.76386e-02   4.03081e-03
+   5  alpha_sample_ttz_sys  -7.30863e-01   9.45095e-01   1.25051e-02   1.81312e-02
+   6  alpha_sample_tz_sys  -1.24605e+00   7.94205e-01   1.34080e-02   1.29311e-02
+   7  alpha_sample_wz_sys  -1.29801e+00   7.89962e-01   1.23928e-02   1.18345e-02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+On point 17 / 20. mu=32, -2lnLambda=528.506 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **  103 **SET PRINT           1
+ **********
+ **********
+ **  104 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         6.34155e-01  2.25896e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.09186e+00  6.54735e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.74953e-01  9.65705e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.67592e+00  8.74610e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.30863e-01  9.45095e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.24605e+00  7.94205e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.29801e+00  7.89962e-01   -5.00000e+00  5.00000e+00
+ **********
+ **  105 **SET ERR         0.5
+ **********
+ **********
+ **  106 **SET PRINT           1
+ **********
+ **********
+ **  107 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **  108 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=285.324 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.34155e-01   2.25896e-02   9.27052e-03   1.27644e+02
+   2  alpha_sample_fakes_sys  -3.09186e+00   6.54735e-01   1.68947e-01   5.24339e-01
+   3  alpha_sample_tth_sys  -4.74953e-01   9.65705e-01   1.95292e-01   2.05954e-01
+   4  alpha_sample_ttw_sys  -1.67592e+00   8.74610e-01   1.87176e-01   6.21915e-01
+   5  alpha_sample_ttz_sys  -7.30863e-01   9.45095e-01   1.92334e-01   2.52383e-01
+   6  alpha_sample_tz_sys  -1.24605e+00   7.94205e-01   1.64913e-01   3.36145e-01
+   7  alpha_sample_wz_sys  -1.29801e+00   7.89962e-01   1.64506e-01   2.84490e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=284.696 FROM MIGRAD    STATUS=CONVERGED      46 CALLS          47 TOTAL
+                     EDM=4.32452e-05    STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.09987e-01   2.25896e-02  -8.29777e-04  -4.56048e-02
+   2  alpha_sample_fakes_sys  -3.05345e+00   6.54735e-01   2.32586e-02  -1.54364e-02
+   3  alpha_sample_tth_sys  -4.64503e-01   9.65705e-01   9.58379e-03   1.50519e-02
+   4  alpha_sample_ttw_sys  -1.64361e+00   8.74610e-01   2.75067e-02   4.81945e-03
+   5  alpha_sample_ttz_sys  -7.13926e-01   9.45095e-01   1.23155e-02   1.68973e-02
+   6  alpha_sample_tz_sys  -1.22372e+00   7.94205e-01   1.33654e-02   1.20069e-02
+   7  alpha_sample_wz_sys  -1.27399e+00   7.89962e-01   1.23600e-02   1.10535e-02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+On point 18 / 20. mu=34, -2lnLambda=566.07 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **  109 **SET PRINT           1
+ **********
+ **********
+ **  110 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         6.09987e-01  2.25896e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.05345e+00  6.54735e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.64503e-01  9.65705e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.64361e+00  8.74610e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -7.13926e-01  9.45095e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.22372e+00  7.94205e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.27399e+00  7.89962e-01   -5.00000e+00  5.00000e+00
+ **********
+ **  111 **SET ERR         0.5
+ **********
+ **********
+ **  112 **SET PRINT           1
+ **********
+ **********
+ **  113 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **  114 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=303.508 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         6.09987e-01   2.25896e-02   9.44033e-03   1.25362e+02
+   2  alpha_sample_fakes_sys  -3.05345e+00   6.54735e-01   1.67573e-01   4.86340e-01
+   3  alpha_sample_tth_sys  -4.64503e-01   9.65705e-01   1.95251e-01   1.87992e-01
+   4  alpha_sample_ttw_sys  -1.64361e+00   8.74610e-01   1.86699e-01   5.70991e-01
+   5  alpha_sample_ttz_sys  -7.13926e-01   9.45095e-01   1.92233e-01   2.30395e-01
+   6  alpha_sample_tz_sys  -1.22372e+00   7.94205e-01   1.64711e-01   3.08511e-01
+   7  alpha_sample_wz_sys  -1.27399e+00   7.89962e-01   1.64279e-01   2.60754e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=302.894 FROM MIGRAD    STATUS=CONVERGED      46 CALLS          47 TOTAL
+                     EDM=3.76299e-05    STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         5.86390e-01   2.25896e-02  -8.07037e-04  -3.53839e-02
+   2  alpha_sample_fakes_sys  -3.01070e+00   6.54735e-01   2.32862e-02  -1.40566e-02
+   3  alpha_sample_tth_sys  -4.51920e-01   9.65705e-01   9.39367e-03   1.39943e-02
+   4  alpha_sample_ttw_sys  -1.60483e+00   8.74610e-01   2.72898e-02   5.48800e-03
+   5  alpha_sample_ttz_sys  -6.94434e-01   9.45095e-01   1.21012e-02   1.57911e-02
+   6  alpha_sample_tz_sys  -1.19854e+00   7.94205e-01   1.33063e-02   1.11764e-02
+   7  alpha_sample_wz_sys  -1.24749e+00   7.89962e-01   1.23094e-02   1.03446e-02
+                               ERR DEF= 0.5
+NO ERROR MATRIX       
+On point 19 / 20. mu=36, -2lnLambda=602.467 (best fit = 0.0693609)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **  115 **SET PRINT           1
+ **********
+ **********
+ **  116 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         5.86390e-01  2.25896e-02    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys  -3.01070e+00  6.54735e-01   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys  -4.51920e-01  9.65705e-01   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys  -1.60483e+00  8.74610e-01   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys  -6.94434e-01  9.45095e-01   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys  -1.19854e+00  7.94205e-01   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys  -1.24749e+00  7.89962e-01   -5.00000e+00  5.00000e+00
+ **********
+ **  117 **SET ERR         0.5
+ **********
+ **********
+ **  118 **SET PRINT           1
+ **********
+ **********
+ **  119 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **  120 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=321.077 FROM MIGRAD    STATUS=INITIATE       14 CALLS          15 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         5.86390e-01   2.25896e-02   9.61646e-03   1.23077e+02
+   2  alpha_sample_fakes_sys  -3.01070e+00   6.54735e-01   1.66104e-01   4.54080e-01
+   3  alpha_sample_tth_sys  -4.51920e-01   9.65705e-01   1.95203e-01   1.72294e-01
+   4  alpha_sample_ttw_sys  -1.60483e+00   8.74610e-01   1.86145e-01   5.26984e-01
+   5  alpha_sample_ttz_sys  -6.94434e-01   9.45095e-01   1.92120e-01   2.11240e-01
+   6  alpha_sample_tz_sys  -1.19854e+00   7.94205e-01   1.64489e-01   2.84677e-01
+   7  alpha_sample_wz_sys  -1.24749e+00   7.89962e-01   1.64035e-01   2.40303e-01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=320.479 FROM MIGRAD    STATUS=CONVERGED      60 CALLS          61 TOTAL
+                     EDM=6.22036e-08    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  13.8 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         5.63417e-01   2.10545e-02  -6.94977e-05   2.21024e-02
+   2  alpha_sample_fakes_sys  -2.96289e+00   6.73545e-01   4.10536e-04  -7.06975e-04
+   3  alpha_sample_tth_sys  -4.40128e-01   9.70754e-01  -4.96517e-04   2.65179e-04
+   4  alpha_sample_ttw_sys  -1.56183e+00   8.95242e-01  -1.81657e-04   2.08106e-04
+   5  alpha_sample_ttz_sys  -6.75652e-01   9.51936e-01  -5.40265e-04   3.56412e-04
+   6  alpha_sample_tz_sys  -1.17240e+00   8.09602e-01  -2.66344e-04   3.95133e-04
+   7  alpha_sample_wz_sys  -1.22029e+00   8.05990e-01  -2.43744e-04   3.60131e-04
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  4.433e-04 -2.035e-03 -8.117e-04 -2.520e-03 -1.044e-03 -1.188e-03 -1.097e-03 
+ -2.035e-03  4.580e-01  3.362e-04  1.669e-02  1.727e-03  6.116e-03  5.878e-03 
+ -8.117e-04  3.362e-04  9.545e-01  3.340e-04 -8.339e-04  4.298e-04  4.896e-04 
+ -2.520e-03  1.669e-02  3.340e-04  8.111e-01  1.920e-03  6.216e-03  6.031e-03 
+ -1.044e-03  1.727e-03 -8.339e-04  1.920e-03  9.176e-01  1.228e-03  1.253e-03 
+ -1.188e-03  6.116e-03  4.298e-04  6.216e-03  1.228e-03  6.616e-01  2.879e-03 
+ -1.097e-03  5.878e-03  4.896e-04  6.031e-03  1.253e-03  2.879e-03  6.557e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.22230   1.000 -0.143 -0.039 -0.133 -0.052 -0.069 -0.064
+        2  0.14323  -0.143  1.000  0.001  0.027  0.003  0.011  0.011
+        3  0.04031  -0.039  0.001  1.000  0.000 -0.001  0.001  0.001
+        4  0.13335  -0.133  0.027  0.000  1.000  0.002  0.008  0.008
+        5  0.05236  -0.052  0.003 -0.001  0.002  1.000  0.002  0.002
+        6  0.06946  -0.069  0.011  0.001  0.008  0.002  1.000  0.004
+        7  0.06439  -0.064  0.011  0.001  0.008  0.002  0.004  1.000
+ ERR MATRIX APPROXIMATE
+On point 20 / 20. mu=38, -2lnLambda=637.637 (best fit = 0.0693609)
