@@ -47,50 +47,51 @@ void limite()
    // --------------------------------------
    // The Model building stage
    // --------------------------------------
+   //Open the file, grab the workspace
+   TFile* f = new TFile(Form("_combined_kinMVA_model.root"));
+   RooWorkspace* w = (RooWorkspace*)f->Get("combined");
 
-//Open the file, grab the workspace
-  TFile* f = new TFile(Form("_combined_kinMVA_model.root",version.c_str(),version.c_str()));
-
-  RooWorkspace* w = (RooWorkspace*)f->Get("combined");
-  if (!w)
-  {
-    cout << "ERROR::Workspace doesn't exist! Check file name" << endl;
-    exit(1);
-  }
+   //Grab the ModelConfig and the data
 
    ////  fix the model parameters
-  // RooAbsPdf *modelWithConstraints = wspace->pdf("modelWithConstraints"); // get the model
-   //RooRealVar *b = wspace->var("b"); // get the background and set it to a constant.  Uncertainty included in ratioBkgEff
-   //b->setVal(100);
-   //b->setConstant();
-   //RooRealVar *ratioSigEff = wspace->var("ratioSigEff"); // get uncertain parameter to constrain
+  RooAbsPdf* modelWithConstraints = w->pdf("ModelConfig"); // get the model
+
+   /// define the observed data
+   RooRealVar* obs = w->var("obs_x_SR");  // get the observable
+   //RooDataSet *data = new RooDataSet("datos", "datos", RooArgSet(*obs));
+   //data->add(*obs);
+  RooDataSet* data = (RooDataSet*)w->data("obsData");
+
+  // RooRealVar *b = wspace->var("b"); // get the background and set it to a constant.  Uncertainty included in ratioBkgEff
+  // b->setVal(100);
+  // b->setConstant();
+  // RooRealVar *ratioSigEff = wspace->var("ratioSigEff"); // get uncertain parameter to constrain
    //ratioSigEff->setConstant();    //fix the signal systematic
-   //RooRealVar *ratioBkgEff = wspace->var("ratioBkgEff"); // get uncertain parameter to constrain
+  // RooRealVar *ratioBkgEff = wspace->var("ratioBkgEff"); // get uncertain parameter to constrain
    //ratioBkgEff->setConstant();  //fix the background systematic
-   //RooArgSet constrainedParams(*ratioSigEff,*ratioBkgEff); // need to constrain these in the fit (should change default behavior)
+  // RooArgSet constrainedParams(*ratioSigEff,*ratioBkgEff); // need to constrain these in the fit (should change default behavior)
 
-   //debido a que mu posee una incertidumbre grande, eso es debido a que ios datos no son sensibles a la  senal
-   ModelConfig* mc = (ModelConfig*)w->obj("ModelConfig");
-   RooDataSet* data = (RooDataSet*)w->data("obsData");
 
-///  get the parameter of interest
-//   RooRealVar *s = wspace->var("s"); //parametro de la senal
-  // RooArgSet paramOfInterest(*s);
+   ///  get the parameter of interest
+  RooRealVar *mu = w->var("mu"); //parametro de la senal
+  RooArgSet paramOfInterest(*mu);
 
-RooArgSet params(*mc->GetNuisanceParameters(),*mc->GetParametersOfInterest());
-mc->Constrain(params);
-RooAbsArg* a7 =params.find("mu");
-RooRealVar* mu=(RooRealVar*)a7; //signal
+
+   //Grab the ModelConfig and the data
+
+
    /// Configure the Model
-  // ModelConfig modelConfig(wspace);
-   //modelConfig.SetName("ModelConfig");
-   //modelConfig.SetObservables(*obs); // los datos
-   //modelConfig.SetPdf(*modelWithConstraints); // el modelo de los datos
-   //modelConfig.SetParametersOfInterest(paramOfInterest); // parametro de la senal
-   //modelConfig.SetNuisanceParameters(constrainedParams); // parametros de los sitematicos
+   ModelConfig modelConfig(w);
+   modelConfig.SetName("ModelConfig");
+   modelConfig.SetObservables(*obs); // los datos
+   modelConfig.SetPdf(*modelWithConstraints); // el modelo de los datos
+   modelConfig.GetParametersOfInterest(); // parametro de la senal
+   modelConfig.GetNuisanceParameters(); // parametros de los sitematicos
+
+
 
    //  use test based on the Profile Likelihood Ratio
-   ProfileLikelihoodCalculator plc(*data,mc);
+   ProfileLikelihoodCalculator plc(*data, modelConfig);
    plc.SetTestSize(.05);  //confidence level, it means with  95%  the true value of the signal is within the range determined by this test
    ConfInterval *lrinterval = plc.GetInterval();
 
