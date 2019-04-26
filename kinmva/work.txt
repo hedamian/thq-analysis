@@ -1,0 +1,82 @@
+RooWorkspace(combined) combined contents
+
+variables
+---------
+(Lumi,alpha_sample_fakes_sys,alpha_sample_tth_sys,alpha_sample_ttw_sys,alpha_sample_ttz_sys,alpha_sample_tz_sys,alpha_sample_wz_sys,binWidth_obs_x_SR_0,binWidth_obs_x_SR_1,binWidth_obs_x_SR_2,binWidth_obs_x_SR_3,binWidth_obs_x_SR_4,binWidth_obs_x_SR_5,binWidth_obs_x_SR_6,channelCat,mu,nom_alpha_sample_fakes_sys,nom_alpha_sample_tth_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nominalLumi,obs_x_SR,weightVar)
+
+p.d.f.s
+-------
+RooRealSumPdf::SR_model[ binWidth_obs_x_SR_0 * L_x_th_SR_overallSyst_x_Exp + binWidth_obs_x_SR_1 * L_x_tth_SR_overallSyst_x_Exp + binWidth_obs_x_SR_2 * L_x_ttz_SR_overallSyst_x_Exp + binWidth_obs_x_SR_3 * L_x_ttw_SR_overallSyst_x_Exp + binWidth_obs_x_SR_4 * L_x_tz_SR_overallSyst_x_Exp + binWidth_obs_x_SR_5 * L_x_wz_SR_overallSyst_x_Exp + binWidth_obs_x_SR_6 * L_x_fakes_SR_overallSyst_x_Exp ] = 9.21949
+RooGaussian::alpha_sample_fakes_sysConstraint[ x=alpha_sample_fakes_sys mean=nom_alpha_sample_fakes_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_tth_sysConstraint[ x=alpha_sample_tth_sys mean=nom_alpha_sample_tth_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_ttw_sysConstraint[ x=alpha_sample_ttw_sys mean=nom_alpha_sample_ttw_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_ttz_sysConstraint[ x=alpha_sample_ttz_sys mean=nom_alpha_sample_ttz_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_tz_sysConstraint[ x=alpha_sample_tz_sys mean=nom_alpha_sample_tz_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_wz_sysConstraint[ x=alpha_sample_wz_sys mean=nom_alpha_sample_wz_sys sigma=1 ] = 1
+RooGaussian::lumiConstraint[ x=Lumi mean=nominalLumi sigma=0.026 ] = 1
+RooProdPdf::model_SR[ lumiConstraint * alpha_sample_tth_sysConstraint * alpha_sample_ttz_sysConstraint * alpha_sample_ttw_sysConstraint * alpha_sample_tz_sysConstraint * alpha_sample_wz_sysConstraint * alpha_sample_fakes_sysConstraint * SR_model(obs_x_SR) ] = 9.21949
+RooSimultaneous::simPdf[ indexCat=channelCat SR=model_SR ] = 9.21949
+
+functions
+--------
+RooProduct::L_x_fakes_SR_overallSyst_x_Exp[ Lumi * fakes_SR_overallSyst_x_Exp ] = 0.442493
+RooProduct::L_x_th_SR_overallSyst_x_Exp[ Lumi * th_SR_overallSyst_x_Exp ] = 0.0272792
+RooProduct::L_x_tth_SR_overallSyst_x_Exp[ Lumi * tth_SR_overallSyst_x_Exp ] = 0.0286533
+RooProduct::L_x_ttw_SR_overallSyst_x_Exp[ Lumi * ttw_SR_overallSyst_x_Exp ] = 0.0210073
+RooProduct::L_x_ttz_SR_overallSyst_x_Exp[ Lumi * ttz_SR_overallSyst_x_Exp ] = 0.0230666
+RooProduct::L_x_tz_SR_overallSyst_x_Exp[ Lumi * tz_SR_overallSyst_x_Exp ] = 0.609938
+RooProduct::L_x_wz_SR_overallSyst_x_Exp[ Lumi * wz_SR_overallSyst_x_Exp ] = 0
+RooStats::HistFactory::FlexibleInterpVar::fakes_SR_epsilon[ paramList=(alpha_sample_fakes_sys) ] = 1
+RooHistFunc::fakes_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0.442493
+RooProduct::fakes_SR_overallSyst_x_Exp[ fakes_SR_nominal * fakes_SR_epsilon ] = 0.442493
+RooHistFunc::th_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0.0272792
+RooProduct::th_SR_overallNorm_x_sigma_epsilon[ mu * th_SR_epsilon ] = 1
+RooProduct::th_SR_overallSyst_x_Exp[ th_SR_nominal * th_SR_overallNorm_x_sigma_epsilon ] = 0.0272792
+RooStats::HistFactory::FlexibleInterpVar::tth_SR_epsilon[ paramList=(alpha_sample_tth_sys) ] = 1
+RooHistFunc::tth_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0.0286533
+RooProduct::tth_SR_overallSyst_x_Exp[ tth_SR_nominal * tth_SR_epsilon ] = 0.0286533
+RooStats::HistFactory::FlexibleInterpVar::ttw_SR_epsilon[ paramList=(alpha_sample_ttw_sys) ] = 1
+RooHistFunc::ttw_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0.0210073
+RooProduct::ttw_SR_overallSyst_x_Exp[ ttw_SR_nominal * ttw_SR_epsilon ] = 0.0210073
+RooStats::HistFactory::FlexibleInterpVar::ttz_SR_epsilon[ paramList=(alpha_sample_ttz_sys) ] = 1
+RooHistFunc::ttz_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0.0230666
+RooProduct::ttz_SR_overallSyst_x_Exp[ ttz_SR_nominal * ttz_SR_epsilon ] = 0.0230666
+RooStats::HistFactory::FlexibleInterpVar::tz_SR_epsilon[ paramList=(alpha_sample_tz_sys) ] = 1
+RooHistFunc::tz_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0.609938
+RooProduct::tz_SR_overallSyst_x_Exp[ tz_SR_nominal * tz_SR_epsilon ] = 0.609938
+RooStats::HistFactory::FlexibleInterpVar::wz_SR_epsilon[ paramList=(alpha_sample_wz_sys) ] = 1
+RooHistFunc::wz_SR_nominal[ depList=(obs_x_SR) depList=(obs_x_SR) ] = 0
+RooProduct::wz_SR_overallSyst_x_Exp[ wz_SR_nominal * wz_SR_epsilon ] = 0
+
+datasets
+--------
+RooDataSet::asimovData(obs_x_SR,weightVar,channelCat)
+RooDataSet::obsData(channelCat,obs_x_SR)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::th_SRnominalDHist(obs_x_SR)
+RooDataHist::tth_SRnominalDHist(obs_x_SR)
+RooDataHist::ttz_SRnominalDHist(obs_x_SR)
+RooDataHist::ttw_SRnominalDHist(obs_x_SR)
+RooDataHist::tz_SRnominalDHist(obs_x_SR)
+RooDataHist::wz_SRnominalDHist(obs_x_SR)
+RooDataHist::fakes_SRnominalDHist(obs_x_SR)
+
+parameter snapshots
+-------------------
+NominalParamValues = (nominalLumi=1[C],nom_alpha_sample_tth_sys=0[C],nom_alpha_sample_ttz_sys=0[C],nom_alpha_sample_ttw_sys=0[C],nom_alpha_sample_tz_sys=0[C],nom_alpha_sample_wz_sys=0[C],nom_alpha_sample_fakes_sys=0[C],weightVar=0,obs_x_SR=0.9375,Lumi=1,alpha_sample_tth_sys=0,alpha_sample_ttz_sys=0,alpha_sample_ttw_sys=0,alpha_sample_tz_sys=0,alpha_sample_wz_sys=0,alpha_sample_fakes_sys=0,mu=1,binWidth_obs_x_SR_0=8[C],binWidth_obs_x_SR_1=8[C],binWidth_obs_x_SR_2=8[C],binWidth_obs_x_SR_3=8[C],binWidth_obs_x_SR_4=8[C],binWidth_obs_x_SR_5=8[C],binWidth_obs_x_SR_6=8[C])
+
+named sets
+----------
+ModelConfig_GlobalObservables:(nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+ModelConfig_NuisParams:(Lumi,alpha_sample_fakes_sys,alpha_sample_tth_sys,alpha_sample_ttw_sys,alpha_sample_ttz_sys,alpha_sample_tz_sys,alpha_sample_wz_sys)
+ModelConfig_Observables:(obs_x_SR,weightVar,channelCat)
+ModelConfig_POI:(mu)
+globalObservables:(nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+observables:(obs_x_SR,weightVar,channelCat)
+
+generic objects
+---------------
+RooStats::ModelConfig::ModelConfig
+

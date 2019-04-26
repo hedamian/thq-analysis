@@ -69,8 +69,9 @@ void scanLikelihood(string version, string parName="mu", double range=2, int nrP
     //Value of the parameter at this point in the scan
     //double val = muhat - range + i / double(nrPoints-1) * 2*range;
     double xmin=0;
-    double val= i*range+xmin;
+   double xmax=40;
 
+ double val= i*(xmax-xmin)/nrPoints;
     //Save the unconditional point we had earlier at the appropriate point in the array
     if (val > muhat && !passedMinimum)
     {

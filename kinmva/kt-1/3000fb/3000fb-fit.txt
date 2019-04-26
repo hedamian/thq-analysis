@@ -1,0 +1,152 @@
+
+Processing macros/simpleFit.C("kinMVA")...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_simPdf_FOR_OBS_channelCat:obs_x_SR with 7 entries
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (lumiConstraint,alpha_sample_tth_sysConstraint,alpha_sample_ttz_sysConstraint,alpha_sample_ttw_sysConstraint,alpha_sample_tz_sysConstraint,alpha_sample_wz_sysConstraint,alpha_sample_fakes_sysConstraint)
+[#1] INFO:Minization -- The following global observables have been defined: (nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state SR (16 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+RooRealVar
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (th_SR_nominal,tth_SR_nominal,ttz_SR_nominal,ttw_SR_nominal,tz_SR_nominal,wz_SR_nominal,fakes_SR_nominal)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         1.00000e+00  5.00000e-01    0.00000e+00  1.00000e+01
+     2 alpha_sample_fakes_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     3 alpha_sample_tth_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     4 alpha_sample_ttw_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     5 alpha_sample_ttz_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     6 alpha_sample_tz_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     7 alpha_sample_wz_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     8 mu           1.00000e+00  1.33000e+01   -3.30000e+01  1.00000e+02
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **    6 **MIGRAD        4000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(SR) first = 0 last = 16 Likelihood offset now set to -160924
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=2.78291 FROM MIGRAD    STATUS=INITIATE       32 CALLS          33 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00000e+00   5.00000e-01   1.72186e-01  -1.78274e-03
+   2  alpha_sample_fakes_sys   0.00000e+00   1.00000e+00   2.01358e-01   8.54218e-05
+   3  alpha_sample_tth_sys   0.00000e+00   1.00000e+00   2.01358e-01  -7.94958e-07
+   4  alpha_sample_ttw_sys   0.00000e+00   1.00000e+00   2.01358e-01  -2.45714e-06
+   5  alpha_sample_ttz_sys   0.00000e+00   1.00000e+00   2.01358e-01  -4.11933e-06
+   6  alpha_sample_tz_sys   0.00000e+00   1.00000e+00   2.01358e-01  -2.38487e-06
+   7  alpha_sample_wz_sys   0.00000e+00   1.00000e+00   2.01358e-01  -4.04706e-06
+   8  mu           1.00000e+00   1.33000e+01   2.33417e-01  -1.22442e-04
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=2.78291 FROM HESSE     STATUS=OK             77 CALLS         111 TOTAL
+                     EDM=1.3754e-12    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00000e+00   2.45264e-02   1.72186e-04  -3.55883e-04
+   2  alpha_sample_fakes_sys   0.00000e+00   1.99668e-01   2.01358e-04  -1.01551e-04
+   3  alpha_sample_tth_sys   0.00000e+00   9.82795e-01   2.01358e-04  -1.08403e-06
+   4  alpha_sample_ttw_sys   0.00000e+00   4.90364e-01   2.01358e-04  -6.56072e-06
+   5  alpha_sample_ttz_sys   0.00000e+00   9.54535e-01   2.01358e-04  -5.42017e-06
+   6  alpha_sample_tz_sys   0.00000e+00   4.30784e-01   2.01358e-04  -2.19479e-05
+   7  alpha_sample_wz_sys   0.00000e+00   5.98318e-01   2.01358e-04  -1.98739e-05
+   8  mu           1.00000e+00   1.73956e+00   2.33417e-04  -8.12875e-05
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=2.78291 FROM MIGRAD    STATUS=CONVERGED     111 CALLS         112 TOTAL
+                     EDM=1.3754e-12    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00000e+00   2.45264e-02   0.00000e+00  -3.55883e-04
+   2  alpha_sample_fakes_sys   0.00000e+00   1.99668e-01   0.00000e+00  -1.01551e-04
+   3  alpha_sample_tth_sys   0.00000e+00   9.82795e-01   0.00000e+00  -1.08403e-06
+   4  alpha_sample_ttw_sys   0.00000e+00   4.90364e-01  -0.00000e+00  -6.56072e-06
+   5  alpha_sample_ttz_sys   0.00000e+00   9.54535e-01   0.00000e+00  -5.42017e-06
+   6  alpha_sample_tz_sys   0.00000e+00   4.30784e-01   0.00000e+00  -2.19479e-05
+   7  alpha_sample_wz_sys   0.00000e+00   5.98318e-01   0.00000e+00  -1.98739e-05
+   8  mu           1.00000e+00   1.73956e+00  -0.00000e+00  -8.12875e-05
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  6.016e-04 -1.978e-03 -1.138e-03 -7.209e-03 -1.923e-03 -1.427e-03 -1.061e-03 -1.815e-03 
+ -1.978e-03  3.989e-02  5.477e-03  1.088e-02 -1.015e-02 -1.013e-02 -5.372e-02 -1.275e-01 
+ -1.138e-03  5.477e-03  9.786e-01 -1.169e-01 -2.903e-02 -4.845e-03  8.649e-03 -9.302e-03 
+ -7.209e-03  1.088e-02 -1.169e-01  2.412e-01 -1.778e-01 -3.496e-02 -1.906e-02  2.263e-01 
+ -1.923e-03 -1.015e-02 -2.903e-02 -1.778e-01  9.224e-01  1.610e-02 -2.303e-03 -1.392e-01 
+ -1.427e-03 -1.013e-02 -4.845e-03 -3.496e-02  1.610e-02  1.860e-01  6.631e-02 -3.109e-01 
+ -1.061e-03 -5.372e-02  8.649e-03 -1.906e-02 -2.303e-03  6.631e-02  3.597e-01 -3.404e-01 
+ -1.815e-03 -1.275e-01 -9.302e-03  2.263e-01 -1.392e-01 -3.109e-01 -3.404e-01  3.027e+00 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.95922   1.000 -0.404 -0.047 -0.598 -0.082 -0.135 -0.072 -0.043
+        2  0.95887  -0.404  1.000  0.028  0.111 -0.053 -0.118 -0.448 -0.367
+        3  0.60055  -0.047  0.028  1.000 -0.241 -0.031 -0.011  0.015 -0.005
+        4  0.92382  -0.598  0.111 -0.241  1.000 -0.377 -0.165 -0.065  0.265
+        5  0.83817  -0.082 -0.053 -0.031 -0.377  1.000  0.039 -0.004 -0.083
+        6  0.85340  -0.135 -0.118 -0.011 -0.165  0.039  1.000  0.256 -0.414
+        7  0.92098  -0.072 -0.448  0.015 -0.065 -0.004  0.256  1.000 -0.326
+        8  0.92859  -0.043 -0.367 -0.005  0.265 -0.083 -0.414 -0.326  1.000
+error tth  8.89972
+error ttw  719.097
+error ttz  233.017
+error wz 629.666
+error tz 628.412
+error fakes  2705.52
+error th  177.994
+######################################
+event  & N prefit    & N Postfit \
+tH & 177.994  & 177.994$/pm$309.633\
+ttH  & 2020.61 & 2020.61$/pm$0\
+ttW  & 5684.96 & 5684.96$/pm$352.619\
+ttZ  & 2163.51 & 2163.51$/pm$222.423\
+tZ & 1256.82 & 1256.82$/pm$270.71\
+WZ & 1259.33 & 1259.33$/pm$376.74\
+fakes  & 6763.79  & 6763.79$/pm$540.204\
+data &19327&
+######################################
+
+  RooFitResult: minimized FCN value: 2.78291, estimated distance to minimum: 1.3754e-12
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+                  Lumi    1.0000e+00 +/-  2.45e-02
+  alpha_sample_fakes_sys    0.0000e+00 +/-  2.00e-01
+  alpha_sample_tth_sys    0.0000e+00 +/-  9.83e-01
+  alpha_sample_ttw_sys    0.0000e+00 +/-  4.90e-01
+  alpha_sample_ttz_sys    0.0000e+00 +/-  9.55e-01
+   alpha_sample_tz_sys    0.0000e+00 +/-  4.31e-01
+   alpha_sample_wz_sys    0.0000e+00 +/-  5.98e-01
+                    mu    1.0000e+00 +/-  1.74e+00
+
+######################################
+RooArgSet:: = (Lumi,alpha_sample_fakes_sys,alpha_sample_tth_sys,alpha_sample_ttw_sys,alpha_sample_ttz_sys,alpha_sample_tz_sys,alpha_sample_wz_sys,mu)
+######################################
+19327

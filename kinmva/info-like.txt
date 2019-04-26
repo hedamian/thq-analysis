@@ -1,0 +1,6 @@
+informacion en la grafica de likelihood 
+
+-significancia: intervalo entre la vertical de 0 y los valores de sigma
+minimo de mu 
+maximo de mu : valor donde se genera 3sigma
+
