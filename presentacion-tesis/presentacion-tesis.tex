@@ -13,6 +13,7 @@
 \usepackage{multicol}
 \usepackage{listings}
 \usepackage{alltt}
+\usepackage{mathtools}
 \usepackage[makeroom]{cancel}
 \usetheme{Frankfurt}
 \usepackage{tikz}
@@ -36,6 +37,7 @@
 	\title{Search for production of a Higgs boson and a single top quark in $\mu\mu$ final states in proton collisions at $\sqrt{s}=13$ TeV}
 	%\subtitle{}
 	\logo{\includegraphics[scale=0.1]{unison-logo.png}}
+	\newcommand{\nologo}{\setbeamertemplate{logo}{}}
 	\institute{Universidad de Sonora}
 	%\date{}
 	%\subject{}
@@ -112,8 +114,8 @@ donde
 		\item $D_\mu {\Psi}_L=\left(\partial_\mu+igW_\mu+ig'Y_LB_\mu\right)\Psi_L$
 		\item $D_\mu \psi_R=\left(\partial_mu +ig' Y_RB_\mu\right)\psi_R $
 		\item g and g are boson coupling constants.
-\footnote{L(R) refers to Left and right fields.
-Y is the  weak hypercharge,Y=T$^3$-Q.Q is charge of particle field and T is weak isospin. $T^3=\pm 1/2$ for left handed doublets and $T^3=0$ for right handed singlets.}  
+\footnote{\tiny{L(R) refers to Left and right fields.
+Y is the  weak hypercharge,Y=T$^3$-Q.Q is charge of particle field and T is weak isospin. $T^3=\pm 1/2$ for left handed doublets and $T^3=0$ for right handed singlets.} }
 	\end{itemize}
 \end{itemize}
 %\begin{equation}
@@ -183,7 +185,7 @@ m_=-\frac{f_uv}{\sqrt{2}}
 \end{align*}
 which m is the mass of fermions 
 \end{frame}
-
+\nologo{
 \begin{frame}
 \section{tH mechanisms}
 \frametitle{Higgs production mechanisms}
@@ -191,7 +193,7 @@ which m is the mass of fermions
 \includegraphics[scale=0.4]{figures/pg.png}
 \end{center}
 \end{frame}
-
+}
 \begin{frame}
 \frametitle{tH production mechanisms}
 \begin{center}
@@ -525,6 +527,7 @@ bosons\cite{2}
 \end{itemize}
 \end{frame}
 
+\nologo{
 \begin{frame}
 \frametitle{Previous results for t$\bar{t}$H production}
 \begin{multicols}{2}
@@ -547,7 +550,7 @@ bosons\cite{2}
 \end{center}
 \end{multicols}
 \end{frame}
-
+}
 \begin{frame}
 	\begin{center}
 		\begin{figure}
@@ -588,21 +591,42 @@ decay passes the signal selection, or in associated production with a W/Z or Hig
 
 \begin{frame}
 \frametitle{Main backgrounds}
+\begin{center}
+\scriptsize{
 \begin{tabular}{|c|c|c|}
+	\hline
 	Background & $\sigma$[pb] & Decay process \\
 	\hline
-t$\bar{t}$H	& 0.2151 & W$^+$b W$^+$b WW $\rightarrow$ $\mu \nu_\mu$b$\mu \nu_\mu$b $\mu^+\mu^-$$\mu^+\mu^-$\\
+t$\bar{t}$H	& 0.2151 & t$\bar{t}$H $\rightarrow$ W$^+$b W$^+$b WW $\rightarrow$ $\mu^+ \nu_\mu$b$\mu^- \bar{\nu_\mu}\bar{b}$ $\mu^+\mu^-$$\mu^+\mu^-$\\
 \hline  
-t$\bar{t}$W$^\pm$ and &0.2043 &  W$^+$b W$^+$b$\mu^+\mu^-$\\
+t$\bar{t}$W and &0.2043 &t$\bar{t}$W  $\rightarrow$  W$^+$b W$^+$b$\mu^+\mu^-$ $\rightarrow$$\mu \nu_\mu$b$\mu \nu_\mu$b$\mu^+\mu^-$\\
 \hline
- t$\bar{t}$Z & 0.2529 & \\
+ t$\bar{t}$Z & 0.2529 & t$\bar{t}$Z  $\rightarrow$ W$^+$b  W$^-$$\bar{b}\mu^+ \mu^-$ $\rightarrow$ $\mu^+ \nu_\mu$b $\mu^- \bar{\nu_\mu} \bar{b}$  \\
  \hline 
-  Rare SM  & & \\
+  W$^+$W$^-$  &1.64 &WW$\rightarrow$$\mu^+ \mu^- \mu^- \mu^+$ \\
+    \hline 
+  tZq  &0.0758 & tZq$\rightarrow$W$^+$b$\mu^+ \mu^-$ q$\rightarrow$$\mu^+ \nu_\mu$b $\mu^+\mu^-$ q \\
+    \hline 
+  tttt  & 0.0091&tttt $\rightarrow$ W$^+$bW$^+$bW$^+$bW$^+$bW$^+$b $\rightarrow$ $\mu^+ \nu_\mu$b$\mu^+ \nu_\mu$b  q$\bar{q}$b q$\bar{q}$b \\
+    \hline 
+  WZZ  & 0.1651& WZZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^- l^+ l^-$\\
+    \hline 
+ ZZZ  &0.0139 & ZZZ$\rightarrow$ $\mu^+ \mu^-\mu^+ \mu^-l^+ l^-$  \\
+    \hline 
+  WZZ  & 0.0556&WZZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^- l^+l^-$ \\
   \hline 
- WZ &4.42965 & \\
+ WZ &4.42965 &WZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^-$ \\
  \hline
- Non prompt leptons & & \\
+ZZ &  1.256 &ZZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^-$ \\
+ \hline
 \end{tabular}
+}
+\end{center}
+\tiny{
+\begin{itemize}
+	\item Rare SM: tttt,WWW,WWZ,WZZ,WW,tZq
+	\item WZ:WZ,ZZ
+\end{itemize}}
 \end{frame}
 
 \begin{frame}
@@ -831,7 +855,7 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
 \begin{minipage}{0.5\textwidth}
 	\begin{center}
 		\begin{figure}
-			\includegraphics[width=6cm,height=5cm]{figures/kin-kt-1.png}
+			\includegraphics[width=6cm,height=5cm]{figures/kt-1/kin-kt-1.png}
 			\caption*{\tiny{Pre-fit signal and background yields for tH process for $k_t$=-1.\\
 					 In the box below each distribution, the ratio of the observed and predicted event yields is shown}}
 		\end{figure}
@@ -840,7 +864,7 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
 \begin{minipage}{0.5\textwidth}
 	\begin{center}
 		\begin{figure}
-			\includegraphics[width=6cm,height=5cm]{figures/simple-kt-1.png}
+			\includegraphics[width=6cm,height=5cm]{figures/kt-1/simple-kt-1.png}
 			\caption*{\tiny{Post-fit signal and background yields for tH process for $k_t$=-1. \\ In the
 					box below each distribution, the ratio of the observed and predicted event yields is shown}}
 		\end{figure}
@@ -848,33 +872,27 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
 \end{minipage}
 \end{frame}
 
-
-
-
 \begin{frame}
-\frametitle{Results}
-\framesubtitle{Likelihood scan}
-To test a hypothesized value of $\mu$ we consider the profile likelihood ratio
-\begin{align}
-\lambda(\mu)=\frac{L(\mu,\hat{\hat{\theta}})}{L(\hat{\mu},\hat{\theta})}
-\end{align}
-\small{
-\begin{itemize}
-\item Here $\hat{\hat{\theta}} $ in the numerator denotes the value of $\theta$ that maximizes L for the specified $\mu$,
-it is the conditional maximum-likelihood (ML) estimator of $\hat{\theta}$ (and thus is a function of $\mu$).
-The denominator is the maximized (unconditional) likelihood function, i.e., $\hat{\mu}$ and $\hat{\theta}$ are
-their ML estimators\cite{3}. 
-\item The presence of the nuisance parameters broadens the profile likelihood as a
-function of $\mu$ relative to what one would have if their values were fixed. This reflects the loss
-of information about $\mu$ due to the systematic uncertainties\cite{3}\cite{4}. 
-\end{itemize}
-}
+\frametitle{ Test statistic $q_{\mu}$ for upper limits}
+For purposes of establishing an upper limit on the strength parameter $\mu$ , we consider two
+closely related test statistics. First, we may define
+\begin{align*}
+q_{\mu}=
+\begin{dcases}
+-2\ln\lambda(\mu) \qquad \hat{\mu} \leq \mu	\\
+0  \qquad \qquad \qquad \hat{\mu}< 0
+\end{dcases}
+\end{align*}
+ The reason for setting $q_\mu = 0$
+for $\hat{\mu}>\mu $ is that when setting an upper limit, one would not regard data with $\hat{\mu}>\mu $ as
+representing less compatibility with $\mu$ than the data obtained, and therefore this is not taken
+as part of the rejection region of the test. From the definition of the test statistic one sees that
+higher values of $q_\mu$ represent greater incompatibility between the data and the hypothesized
+value of $\mu$.
 \end{frame}
 
-
 \begin{frame}
-\frametitle{Results}
-\framesubtitle{Likelihood scan}
+\framesubtitle{Test statistic $q_{\mu}$ for upper limits}
 \begin{minipage}{0.5\textwidth}
 	\begin{center}
 		\begin{figure}
@@ -886,40 +904,128 @@ of information about $\mu$ due to the systematic uncertainties\cite{3}\cite{4}.
 \begin{minipage}{0.5\textwidth}
 	\begin{center}
 		\begin{figure}
-			\includegraphics[width=6cm,height=5cm]{figures/Likelihood-kt-1.png}
+			\includegraphics[width=6cm,height=5cm]{figures/kt-1/Likelihood-kt-1.png}
 			\caption*{Likelihood scan for k$_t$=-1}
 		\end{figure}
 	\end{center}
 \end{minipage}
 \end{frame}
 
+\nologo{
 \begin{frame}
-\frametitle{Estimation of $\mu$}
-Limit value for $\mu$ for $3\sigma$ 
-\begin{tabular}{|c|c|}
-kt=1 &  28.047  \\
-kt=-1 & 1.97 \\
-kt=1 for 150 fb &13.816 \\
-kt=1 for 300 fb & 10.491\\
-kt=1 for 3000 fb &  4.373 \\
-kt=-1 for 150 fb &1.979 \\
-kt=-1 for 300 fb &1.713 \\
-kt=-1 for 3000fb & 1.181
-\end{tabular}
+\frametitle{Test statistic $q_{\mu}$ for upper limits}
+
+\begin{center}
+	\begin{tabular}{cc}
+	\includegraphics[width=6cm,height=5cm]{figures/nos.png} & \includegraphics[width=5cm,height=5cm]{figures/normal-curve.jpg}
+	\end{tabular}
+\end{center}
 \end{frame}
+}
+
 
 \begin{frame}
-\frametitle{Extrapolation of luminosity }
-\begin{center}
-\begin{tabular}{cc}
-\includegraphics[width=4cm,height=3cm]{figures/kin.png} &
-\includegraphics[width=4cm,height=3cm]{figures/150fb/kin.png}\\ 
-35.9 fb$^{-1}$ & 150 fb$^{-1}$ \\
-\includegraphics[width=4cm,height=3cm]{figures/300fb/kin-300.png}&
-\includegraphics[width=4cm,height=3cm]{figures/3000fb/kin-3000.png}\\
-300 fb$^{-1}$ & 3000 fb$^{-1}$ \\
-\end{tabular}
-\end{center}
+\frametitle{Test statistic $q_{\mu}$ for upper limits}
+
+\begin{table}
+	\caption*{Table for estimation of $\mu$ for fitting and upper limit with luminosity of 35.9 fb$^{-1}$}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Model	&$\mu$ &$\mu$ upper limit  \\
+		\hline
+		SM ($K_t=1$)& 2.4975e+00 $\pm$ 1.29e+01&	28.047    \\
+		\hline
+	$K_t=-1$	& 6.9361e-02 $\pm$1.02e+00  &1.97 \\
+		\hline
+	\end{tabular}
+\end{table}
+\end{frame}
+
+
+\nologo{
+	\begin{frame}
+	\frametitle{Extrapolation of luminosity }
+	\begin{center}
+		\begin{tabular}{cc}
+			\includegraphics[width=5.5cm,height=3cm]{figures/kin.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/150fb/kin.png}\\ 
+			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
+			\includegraphics[width=5.5cm,height=3cm]{figures/300fb/kin-300.png}&
+			\includegraphics[width=5.5cm,height=3cm]{figures/3000fb/kin-3000.png}\\
+			\scriptsize{300 fb$^{-1}$} & \scriptsize{3000 fb$^{-1}$} \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+}
+
+\nologo{
+	\begin{frame}
+	\frametitle{Likelihood scan }
+	\begin{center}
+		\begin{tabular}{cc}
+			\includegraphics[width=5.5cm,height=3cm]{figures/Likelihood.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/150fb/Likelihood.png}\\ 
+			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
+			\includegraphics[width=5.5cm,height=3cm]{figures/300fb/Likelihood.png}&
+			\includegraphics[width=5.5cm,height=3cm]{figures/3000fb/Likelihood.png}\\
+			\scriptsize{300 fb$^{-1}$} & \scriptsize{3000 fb$^{-1}$} \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+}
+
+
+\nologo{
+	\begin{frame}
+	\frametitle{Extrapolation of luminosity for $k_t=-1$}
+	\begin{center}
+		\begin{tabular}{cc}
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/kin-kt-1.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/150fb/kin.png}\\ 
+			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/300fb/kin-300.png}&
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/3000fb/kin-3000.png}\\
+			\scriptsize{300 fb$^{-1}$} & \scriptsize{3000 fb$^{-1}$} \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+}
+
+
+\nologo{
+	\begin{frame}
+	\frametitle{Likelihood scan for  $k_t=1$}
+	\begin{center}
+		\begin{tabular}{cc}
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/Likelihood-kt-1.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/150fb/Likelihood.png}\\ 
+			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/300fb/Likelihood.png}&
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/3000fb/Likelihood.png}\\
+			\scriptsize{300 fb$^{-1}$} & \scriptsize{3000 fb$^{-1}$} \\
+		\end{tabular}
+	\end{center}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Estimation of $\mu$}
+\tiny{
+	\begin{tabular}{|p{1cm}|c|c|c|c|}
+		\hline
+		Luminosity (fb$^{-1}$)	&$\mu$ &$\mu$ for $k_t=-1$ &$\mu$ upper limit &$\mu$ upper limit for $k_t=1$ \\
+		\hline
+		35.9 & 2.4975e+00 $\pm$ 1.29e+01 & 6.9361e-02 $\pm$1.02e+00&	28.047 & 1.97   \\
+		\hline
+		150& 1.0000e+00 +/-  6.44e+00 & 1.0000e+00 $\pm$  5.44e-01  &12.619 &0.915 \\
+		\hline
+		300&1.0000e+00 +/-  4.83e+00 &1.0000e+00 $\pm$  4.07e-01 & 9.427&0.649 \\
+		\hline
+		3000&1.0000e+00 $\pm$  1.54e+00 & 1.0000e+00 $\pm$  1.51e-01&	 3.442 & 0.25
+		\\
+		\hline
+	\end{tabular}
+}
 \end{frame}
 
 
@@ -1128,6 +1234,26 @@ mu \qquad	\qquad	\qquad	\qquad	\qquad 6.9361e-02 +/-  1.02e+00
 \end{frame}
 
 \begin{frame}
+\frametitle{Results}
+\framesubtitle{Likelihood scan}
+To test a hypothesized value of $\mu$ we consider the profile likelihood ratio
+\begin{align}
+\lambda(\mu)=\frac{L(\mu,\hat{\hat{\theta}})}{L(\hat{\mu},\hat{\theta})}
+\end{align}
+\small{
+	\begin{itemize}
+		\item Here $\hat{\hat{\theta}} $ in the numerator denotes the value of $\theta$ that maximizes L for the specified $\mu$,
+		it is the conditional maximum-likelihood (ML) estimator of $\hat{\theta}$ (and thus is a function of $\mu$).
+		The denominator is the maximized (unconditional) likelihood function, i.e., $\hat{\mu}$ and $\hat{\theta}$ are
+		their ML estimators\cite{3}. 
+		\item The presence of the nuisance parameters broadens the profile likelihood as a
+		function of $\mu$ relative to what one would have if their values were fixed. This reflects the loss
+		of information about $\mu$ due to the systematic uncertainties\cite{3}\cite{4}. 
+	\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
 \frametitle{Statistical test}
 It is convenient to use the statistic
 \begin{align}
@@ -1160,15 +1286,6 @@ where t $\mu$  is the value of the statistic t$\mu$ observed from the data and $
 the PDF (Probability density function) of t$\	mu$ under the assumption of the signal strength $\mu$\cite{4}
 \end{frame}
 
-\begin{frame}
-\frametitle{P value}
-\begin{center}
-\begin{figure}
-\includegraphics[scale=0.25]{figures/nos.png}
-\caption{$P_\mu$ vs  f($t_\mu$|$\mu$)}	
-\end{figure}
-\end{center}
-\end{frame}
 
 \begin{frame}
 \frametitle{Luminosity scale}
@@ -1217,15 +1334,7 @@ fakes  & 338.189$\pm$  170.744  & 338.189$\pm$84.302\\
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Luminosity scale}
-\framesubtitle{Likelihood scan}
-\begin{center}
-	\begin{figure}
-	\includegraphics[scale=0.25]{figures/150fb/Likelihood.png}
-\end{figure}
-\end{center}
-\end{frame}
+
 
 \begin{frame}
 \frametitle{Luminosity scale}
@@ -1273,15 +1382,6 @@ fakes  & 676.379$\pm$ 341.488 & 676.379$\pm$133.725\\
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Luminosity scale}
-\framesubtitle{Likelihood scan}
-\begin{center}
-	\begin{figure}
-		\includegraphics[scale=0.25]{figures/300fb/Likelihood.png}
-	\end{figure}
-\end{center}
-\end{frame}
 
 
 
@@ -1333,15 +1433,6 @@ fakes  & 6763.79 $\pm$3414.88 & 6763.79$\pm$591.597\\
 \end{table}
 \end{frame}
 
-\begin{frame}
-\frametitle{Luminosity scale}
-\framesubtitle{Likelihood scan}
-\begin{center}
-	\begin{figure}
-		\includegraphics[scale=0.25]{figures/3000fb/Likelihood.png}
-	\end{figure}
-\end{center}
-\end{frame}
 
 
 

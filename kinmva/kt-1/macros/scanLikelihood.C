@@ -132,7 +132,7 @@ cs->SaveAs("Likelihood.png");
 TCanvas *tm1 = new TCanvas("tm1","tm1",100,100,1200,900);
 TF1 *fa2 = new TF1("fa2","((1/sqrt(2.*pi))*(1/sqrt(x))*exp(-x/2.))",0,10);
 //fa2->SetParameters(x_ary);
-fa2->SetTitle(" p-value for t_{#mu}  k_{t}=1 ;t_{#mu};P(t_{#mu})");
+//fa2->SetTitle(" p-value for t_{#mu}  k_{t}=1 ;t_{#mu};P(t_{#mu})");
 fa2->SetLineColor(kBlack);
 
 fa2->DrawIntegral();

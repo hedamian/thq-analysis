@@ -76,7 +76,7 @@ hmc->Add(wz);
 hmc->Add(ttw);
 hmc->Add(ttz);
 hmc->Add(fakes);
-hmc->Add(th);
+//hmc->Add(th);
 /////////////////////////////////
 
 TH1F *hat = new TH1F("hat","hat",16,-1,1);
