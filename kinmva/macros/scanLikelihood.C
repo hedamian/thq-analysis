@@ -13,7 +13,7 @@
 
 using namespace std;
 
-void scanLikelihood(string version, string parName="mu", double range=2, int nrPoints=30)
+void scanLikelihood(string version, string parName="mu", double range=2, int nrPoints=20)
 {
   //Use a convenient helper struct to make opening the workspace and grabbing the objects easier
   //See macros/ModelInfo.C
@@ -129,13 +129,23 @@ cs->SaveAs("Likelihood.png");
 
 /////////////////////////////////////////////////////////
 TCanvas *tm1 = new TCanvas("tm1","tm1",100,100,1200,900);
+tm1->Range(0,0,10,1);
+TH1F *hoto = new TH1F("hoto",";t_{#mu};f(t_{#mu})",1,0,10.9);
 TF1 *fa2 = new TF1("fa2","((1/sqrt(2.*pi))*(1/sqrt(x))*exp(-x/2.))",0,10);
 //fa2->SetParameters(x_ary);
 //fa2->SetTitle(" p-value for t_{#mu}  k_{t}=1 ;t_{#mu};P(t_{#mu})");
+hoto->SetStats(0);
 fa2->SetTitle();
 fa2->SetLineColor(kBlack);
+hoto->Draw();
+hoto->GetXaxis()->SetRangeUser(0,10.9);
+hoto->GetYaxis()->SetRangeUser(0,1.1);
+fa2->DrawIntegral("same");
 
-fa2->DrawIntegral();
+
+TF1 *fa3 = new TF1("fa3","((1/sqrt(2.*pi))*(1/sqrt(x))*exp(-x/2.))/1.8",0,10);
+fa3->SetLineColor(kBlue);
+fa3->Draw("same");
 ///////////////////////////////////////////
 TLine l2;
 l2.SetLineStyle(2);
@@ -172,15 +182,28 @@ lat2.SetTextColor(kGreen+4);
 lat2.DrawLatex(9.32,-0.1,"99.7%");
 
 
+
+TGaxis *axis5 = new TGaxis(10.9,0,10.9,1.1,0,1.1,510,"+L");
+//axis5->SetLabelFont(0.5); // Absolute font size in pixel (precision 3)
+axis5->SetLabelSize(0.04);
+axis5->SetTitle("P_{#mu}");
+axis5->Draw();
+
+TGaxis *axis6 = new TGaxis(0,1.1,10.9,1.1,0,10.9,510,"-L");
+//axis5->SetLabelFont(0.5); // Absolute font size in pixel (precision 3)
+axis6->SetLabelSize(0.04);
+axis6->SetTitle("f(t_{#mu}|#mu)");
+axis6->Draw();
+
 tm1->SaveAs("nos.png");
 
-TCanvas *tm2 = new TCanvas("tm2","tm2",100,100,1200,900);
-fa2->SetLineColor(kRed);
-fa2->SetTitle();
-fa2->GetXaxis()->SetTitle("t_{#mu}");
-fa2->GetYaxis()->SetTitle("f(t_{#mu})");
-fa2->GetXaxis()->SetLimits(0,10);
-fa2->Draw();
-tm2->SaveAs("tmu.png");
+//TCanvas *tm2 = new TCanvas("tm2","tm2",100,100,1200,900);
+//fa2->SetLineColor(kRed);
+//fa2->SetTitle();
+//fa2->GetXaxis()->SetTitle("t_{#mu}");
+//fa2->GetYaxis()->SetTitle("f(t_{#mu})");
+//fa2->GetXaxis()->SetLimits(0,10);
+//fa2->Draw();
+//tm2->SaveAs("tmu.png");
 
 }

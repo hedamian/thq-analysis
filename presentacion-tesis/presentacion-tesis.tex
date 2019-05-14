@@ -96,6 +96,51 @@ standard model (BSM) such as String Theory and  Supersymmetry.
 \end{frame}
 
 \begin{frame}
+\frametitle{Particles Properties}
+Table of particles in SM
+\begin{table}
+\tiny{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline 
+Particle	&Mass (MeV/$c^2$)  &Charge  & spin &Lifetime (s)  & Distance in lifetime (meters) \\ 
+	\hline 
+Up (u)	& 2.2 & $\frac{2}{3}$ & $\frac{1}{2}$ & stable &  -\\ 
+	\hline 
+Charm (c)	& 1280 &$\frac{2}{3}$  &  $\frac{1}{2}$ & $ 1.1 \times 10^{-12}$ &  23.39$\times 10^{-4}$ \\ 
+	\hline 
+Top	(t)& 173100 & $\frac{2}{3}$ & $\frac{1}{2}$  & 5$\times$10$^{-25}$ &1.06$\times 10^{-15}$   \\ 
+	\hline 
+Down (d)	& 4.6 &$-\frac{1}{3}$  & $\frac{1}{2}$  & Stable & - \\ 
+	\hline 
+Strange (s)	& 96 &$-\frac{1}{3}$  & $\frac{1}{2}$  &$1.24 \times 10^{-8}$  & 26.37 \\ 
+	\hline 
+Bottom (b)	& 4180 &$-\frac{1}{3}$  &  $\frac{1}{2}$ &$1.3 \times 10^{-12}$ s  & 27.64 $\times 10^{-4}$\\ 
+	\hline 
+W 	& 80379 &$\pm$1  & 1 & 3$\times$ 10$^{-25}$ &  6.37$\times 10^{-16}$\\ 
+	\hline 
+Z & 91187.6 &0  & 1 & 3$\times$ 10$^{-25}$  &6.37$\times 10^{-16}$ \\ 
+\hline
+Photon ($\gamma$) & 0 &0  &  1&Stable  & - \\ 
+\hline
+Gluon (g)	& 0 &0  &  1&Stable  & - \\ 
+	\hline 
+Higgs (H)	& 125.18 &0  &  0& 1.56 $\times$ $10^{-22}$ & 3.31$\times 10^{-13}$ \\ 
+	\hline 
+Electron (-e)& 0.511 & -1 &   $\frac{1}{2}$& Stable & - \\ 
+	\hline 
+Muon ($\mu$)	& 105.7 & -1  &  $\frac{1}{2}$ & 2.2$\times$10$^{-6}$ & 4678.61 \\ 
+	\hline 
+$\tau$	& 1776.86 &-1  &  $\frac{1}{2}$ & 2.9$\times$10$^{-13}$ & 61.67$\times 10^{-5}$\\ 
+	\hline 
+$\nu_e$	$\nu_\mu$ $\nu_\tau$& 0 & 0 &  $\frac{1}{2}$ & Stable &  -\\ 
+	\hline 
+\end{tabular} 
+}
+\end{table}
+\tiny{Stable means no decay, or lifetime almost infinite. Particles speeds at 0.99c}
+\end{frame}
+
+\begin{frame}
 \frametitle{Electroweak SM Lagrangian}
 The standard model is a theory of fields with spins 0, $\frac{1}{2}$ and 1. 
 The  SM lagrangian 	
@@ -110,13 +155,16 @@ donde
 		\item  $G^{i\mu\nu}=\partial_\mu W^i_\nu -\partial_\nu W^i_\mu -g\epsilon^{ijk}W^j_\mu W^k_\nu $
 	\end{itemize}
 	\item $\mathcal{L}_f=i\bar{\Psi}_L \cancel{D}{\Psi}_L+i\bar{\psi}_R \cancel{D}{\psi}_R  $ is the kinematic term for fermions 
+\scriptsize{
 	\begin{itemize}
 		\item $D_\mu {\Psi}_L=\left(\partial_\mu+igW_\mu+ig'Y_LB_\mu\right)\Psi_L$
-		\item $D_\mu \psi_R=\left(\partial_mu +ig' Y_RB_\mu\right)\psi_R $
-		\item g and g are boson coupling constants.
+		\item $D_\mu \psi_R=\left(\partial_\mu +ig' Y_RB_\mu\right)\psi_R $
+		\item g and g' are boson coupling constants.
 \footnote{\tiny{L(R) refers to Left and right fields.
 Y is the  weak hypercharge,Y=T$^3$-Q.Q is charge of particle field and T is weak isospin. $T^3=\pm 1/2$ for left handed doublets and $T^3=0$ for right handed singlets.} }
+\item $W_\mu=\sigma^iW^i_\mu$, where $\sigma^i$ are the pauli matrices.
 	\end{itemize}
+}
 \end{itemize}
 %\begin{equation}
 %\begin{split}
@@ -160,31 +208,36 @@ Yukawa lagrangian
 \begin{align}
 \mathcal{L}_{yukawa}=\Gamma^u_{mn}q_{m\text{,}L} \tilde{\phi} u_{n\text{,}R}+\Gamma^d_{mn}\bar{q}_{m\text{,}L} \phi d_{n\text{,}R}+\Gamma^e_{mn}\bar{l}_{m\text{,}L} \phi e_{n\text{,}R}+h.c
 \end{align}
-\scriptsize{where h.c is hermitian conjugate.\\
+\scriptsize{where h.c is hermitian conjugate. %% m and n are flavors of quarks and leptons.
+\\
 The matrices $\Gamma_{mn}$ describe the so called Yukawa couplings between higgs doublet $\phi$ and the fermions.\\
 Choosing}
 \begin{align*}
 \Phi=-\frac{1}{2}\left(\begin{array}{c}
 0 \\
-v+h
+\nu+h
 \end{array} \right) \rightarrow  \Phi=\frac{1}{2}\left(\begin{array}{c}
 0 \\
-v
-\end{array} \right)
+\nu
+\end{array} \right) %\equiv v
 \end{align*}
 \scriptsize{
 By using it on the first part of 
-the lagrangian it is obtained } 
+the lagrangian it is obtained for u quark} 
 \begin{align*}
-	\frac{f_u v}{\sqrt{2}(\bar{u_L}u_R+\bar{u_R}u_L)}
+\mathcal{L}_{yukawa}=\frac{\Gamma^u_{uu}v}{\sqrt{2}}(\bar{u_L}u_R+\bar{u_R}u_L)
 \end{align*}
 \scriptsize{
 from which the masses for the fermions in question can be read off:}
 \begin{align*}
-m_=-\frac{f_uv}{\sqrt{2}}
+m_u=-\frac{\Gamma^u_{uu}v}{\sqrt{2}}
 \end{align*}
-which m is the mass of fermions 
+which m is the mass of fermions and $v\equiv \phi= \left(\begin{array}{c}
+0\\
+\nu
+\end{array}\right)$
 \end{frame}
+
 \nologo{
 \begin{frame}
 \section{tH mechanisms}
@@ -192,6 +245,7 @@ which m is the mass of fermions
 \begin{center}
 \includegraphics[scale=0.4]{figures/pg.png}
 \end{center}
+\small{Different Higgs production mechanism, from the most likely to least likely}
 \end{frame}
 }
 \begin{frame}
@@ -227,7 +281,7 @@ an order of magnitude or more.
 \begin{itemize}
 \item Classical definition: When two particles interact, cross section is the area transverse to their relative motion within
 which they must meet in order to scatter from each other.
-\item Quantum definition: Cross section describes the likelihood of two particles interacting under certain conditions\cite{1}
+\item Quantum definition: Cross section describes the likelihood of two particles interacting under certain conditions\cite{1}\cite{6}
 \item Experimentally
 \begin{align}
 d\sigma=\frac{\text{number of particles scattered into solid angle} \Delta\Omega}{\text{(number of particles incident)(scattering centers/area)}}
@@ -238,7 +292,9 @@ d\sigma=\frac{\text{number of particles scattered into solid angle} \Delta\Omega
 
 \begin{frame}
 \frametitle{Cross section}
-\begin{center}
+\begin{center}\begin{center}
+		
+	\end{center}
 	\begin{figure}
 		\includegraphics[scale=0.5]{figures/cs1.png}
 		\caption{Drawing of an idealized scattering process showing the differential solid angle $\Delta\Omega$ and the
@@ -250,7 +306,7 @@ d\sigma=\frac{\text{number of particles scattered into solid angle} \Delta\Omega
 \begin{frame}
 \frametitle{Cross section}
 The reaction rate $N_R$ is determined by the total cross section $\sigma$ and the incident flux L.\\
-L is called luminosity and it is measured in cm$^{-1}$s$^{-1}$. 
+L is called luminosity and it is measured in cm$^{-1}$s$^{-1}$.\cite{6}
 \begin{align}
 N_R=\sigma \text{L}
 \end{align}
@@ -513,23 +569,10 @@ It is required:
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\section{Previous results}
-\frametitle{Previous results}
-\begin{itemize}
-\item Direct searches for tHq production using all relevant Higgs decay modes
-have previously been carried out by CMS in the 8 TeV dataset in pp collisions\cite{5} 
-\item On 2015, in pp collisions with $\sqrt{s}$=13 TeV data set using the H$\rightarrow$b$\bar{b}$ channel, corresponding to an
-integrated luminosity of 35.9 fb$^-1$\cite{6}
-\item In 2016, for $\sqrt{s}$= 13 TeV dataset, a search for t$\bar{t}$H production in multilepton
-final states recently produced first evidence for associated production of top quarks and Higgs
-bosons\cite{2}
-\end{itemize}
-\end{frame}
 
 \nologo{
 \begin{frame}
-\frametitle{Previous results for t$\bar{t}$H production}
+\frametitle{Previous results for t$\bar{t}$H+tH production}
 \begin{multicols}{2}
 \begin{center}
 	\begin{figure}
@@ -561,61 +604,35 @@ bosons\cite{2}
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Main backgrounds}
-In the leptonic channels, the main backgrounds are expected to
-	arise from the production of top quarks
-	\begin{itemize}
-	\item In the dominant t$\bar{t}$ mode, where 
- same-sign dilepton signatures can occur when a non-prompt lepton from heavy-flavor
-decay passes the signal selection, or in associated production with a W/Z or Higgs boson.
-	\item Processes with single top quarks also contribute, mostly in the associated production with a Z
-	boson (tZ) or when produced with both a W and a Z boson (WZ) 
 
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Main backgrounds}
-\begin{itemize}
-\item t$\bar{t}$W$^\pm$ and t$\bar{t}$Z (t$\bar{t}$V): Backgrounds are estimated directly from simulated events% which are corrected for data/MC differences and
-	%inefficiencies in the same way as signal events. 
-	\item WZ: Diboson production with leptonic Z decays and additional jet radiation in the final state can
-	lead to signatures very similar to that of the signal. Due to the larger cross section, the main
-	contribution arises from WZ production.
-	\item t$\bar{t}$H: tHq production which decays to same sign deleptons.
-\item Rare SM (tZ,VVV,WW,tttt): Due to small event yields, all these process are grouped as one.
-\item Non prompt leptons b quark decays and spurious lepton signatures from hadronic jets.
-\end{itemize}
-\end{frame}
 
 \begin{frame}
 \frametitle{Main backgrounds}
 \begin{center}
 \scriptsize{
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|p{7cm}|}
 	\hline
 	Background & $\sigma$[pb] & Decay process \\
 	\hline
-t$\bar{t}$H	& 0.2151 & t$\bar{t}$H $\rightarrow$ W$^+$b W$^+$b WW $\rightarrow$ $\mu^+ \nu_\mu$b$\mu^- \bar{\nu_\mu}\bar{b}$ $\mu^+\mu^-$$\mu^+\mu^-$\\
+t$\bar{t}$H	& 0.2151 & t$\bar{t}$H $\rightarrow$ W$^+$b W$^- \bar{b}$ W$^+$W$^-$ $\rightarrow$ $\mu^+ \nu_\mu$b$\mu^- \bar{\nu_\mu}\bar{b}$ $\mu^+\nu_\mu$ $\mu^-\bar{\nu_\mu}$\\
 \hline  
-t$\bar{t}$W and &0.2043 &t$\bar{t}$W  $\rightarrow$  W$^+$b W$^+$b$\mu^+\mu^-$ $\rightarrow$$\mu \nu_\mu$b$\mu \nu_\mu$b$\mu^+\mu^-$\\
+t$\bar{t}$W  &0.2043 &t$\bar{t}$W  $\rightarrow$  W$^+$bW$^- \bar{b}$ $\mu^+\nu_\mu$ $\rightarrow$ $\mu^+ \nu_\mu$b $\mu^- \bar{\nu_\mu} \bar{b}$ $\mu^+ \nu_\mu$\\
 \hline
- t$\bar{t}$Z & 0.2529 & t$\bar{t}$Z  $\rightarrow$ W$^+$b  W$^-$$\bar{b}\mu^+ \mu^-$ $\rightarrow$ $\mu^+ \nu_\mu$b $\mu^- \bar{\nu_\mu} \bar{b}$  \\
+ t$\bar{t}$Z & 0.2529 & t$\bar{t}$Z  $\rightarrow$ W$^+$b  W$^-$$\bar{b} \mu^+ \mu^-$ $\rightarrow$ $\mu^+ \nu_\mu$b $\mu^- \bar{\nu_\mu} \bar{b}\mu^+ \mu^-$  \\
  \hline 
-  W$^+$W$^-$  &1.64 &WW$\rightarrow$$\mu^+ \mu^- \mu^- \mu^+$ \\
+  W$^\pm$W$^\pm$  &1.64 & W$^+$W$^-$ $\rightarrow$$\mu^+\nu_\mu$$\mu^-\bar{\nu_\mu}$ \\
     \hline 
   tZq  &0.0758 & tZq$\rightarrow$W$^+$b$\mu^+ \mu^-$ q$\rightarrow$$\mu^+ \nu_\mu$b $\mu^+\mu^-$ q \\
     \hline 
-  tttt  & 0.0091&tttt $\rightarrow$ W$^+$bW$^+$bW$^+$bW$^+$bW$^+$b $\rightarrow$ $\mu^+ \nu_\mu$b$\mu^+ \nu_\mu$b  q$\bar{q}$b q$\bar{q}$b \\
+  t$\bar{t}$t$\bar{t}$  & 0.0091&t$\bar{t}$t$\bar{t}$ $\rightarrow$ W$^+$b   W$^- \bar{b}$  W$^+$b  W$^- \bar{b}$   $\rightarrow$ $\mu^+ \nu_\mu$b $\mu^- \bar{\nu_\mu} \bar{b}$ $\mu^+ \nu_\mu$b   $\mu^- \bar{\nu_\mu} \bar{b}$ \\
     \hline 
-  WZZ  & 0.1651& WZZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^- l^+ l^-$\\
+  W$^+$W$^-$Z  & 0.1651& W$^+$W$^-$Z$\rightarrow$ $\mu^+ \nu_\mu$ $\mu^- \bar{\nu_\mu} \mu^+ \mu^-$\\
     \hline 
  ZZZ  &0.0139 & ZZZ$\rightarrow$ $\mu^+ \mu^-\mu^+ \mu^-l^+ l^-$  \\
     \hline 
-  WZZ  & 0.0556&WZZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^- l^+l^-$ \\
+  W$^+$ZZ  & 0.0556&W$^+$ZZ$\rightarrow$ $\mu^+ \nu_\mu \mu^+ \mu^- l^+l^-$ \\
   \hline 
- WZ &4.42965 &WZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^-$ \\
+ W$^+$Z &4.42965 &W$^+$Z$\rightarrow$ $\mu^+ \nu_\mu \mu^+ \mu^-$ \\
  \hline
 ZZ &  1.256 &ZZ$\rightarrow$ $\mu^+ \mu^- \mu^+ \mu^-$ \\
  \hline
@@ -768,18 +785,74 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Results}
+\framesubtitle{Likelihood scan}
+To test a hypothesized value of $\mu$ we consider the profile likelihood ratio
+\begin{align}
+\lambda(\mu)=\frac{L(\mu,\hat{\hat{\theta}})}{L(\hat{\mu},\hat{\theta})}
+\end{align}
+\small{
+	\begin{itemize}
+		\item Here $\hat{\hat{\theta}} $ in the numerator denotes the value of $\theta$ that maximizes L for the specified $\mu$,
+		it is the conditional maximum-likelihood (ML) estimator of $\hat{\theta}$ (and thus is a function of $\mu$).
+		The denominator is the maximized (unconditional) likelihood function, i.e., $\hat{\mu}$ and $\hat{\theta}$ are
+		their ML estimators\cite{3}. 
+		\item The presence of the nuisance parameters broadens the profile likelihood as a
+		function of $\mu$ relative to what one would have if their values were fixed. This reflects the loss
+		of information about $\mu$ due to the systematic uncertainties\cite{3}\cite{4}. 
+	\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistical test}
+It is convenient to use the statistic
+\begin{align}
+t_\mu=-2\ln{\lambda(\mu)} 
+\end{align}
+as the basis of a statistical test. Higher values of $t_\mu$ thus correspond to increasing
+incompatbility between the data and $\mu$.
+We may define a test of a hypothesized value of $\mu$ by using the statistic $t_\mu$ directly
+as measure of discrepancy between the data and the hypothesis, with higher values of
+$t_\mu$ correspond to increasing disagreement\cite{4}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Results}
+\begin{minipage}{0.4\textwidth}
+	\begin{center}
+	\begin{figure}
+		\includegraphics[width=5.5cm,height=5cm]{figures/kin.png}
+		\caption*{\tiny{Pre-fit signal and background yields for tH process. In the
+			box below each distribution, the ratio of the observed and predicted event yields is shown}}
+	\end{figure}
+\end{center}
+\end{minipage}\hfill \quad
+\begin{minipage}{0.4\textwidth}
+	\begin{center}
+	\begin{figure}
+		\includegraphics[width=5.5cm,height=5cm]{figures/simple.png}
+		\caption*{\tiny{Post-fit signal and background yields for tH process. In the
+			box below each distribution, the ratio of the observed and predicted event yields is shown}}
+	\end{figure}
+\end{center}
+\end{minipage}
+\end{frame}
+
 
 \begin{frame}
 \section{Results}
 \frametitle{Results}
-
 \begin{table}
 	\caption{Prefit and postfit table for each yield.}
 \begin{tabular}{|c|c|c|}
 	\hline
 	Process  & Number of events prefit    & Number of events Postfit \\
 	\hline
-	tH & 2.13 $\pm$ 0.21  & 5.36$\pm$27.40\\
+	tH & 2.13   & 5.36$\pm$27.40\\
 	\hline
 	t$\bar{t}$H  &  24.18 $\pm$ 2.26 & 24.81 $\pm$ 2.24 \\
 	\hline
@@ -798,27 +871,22 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
  Prefit uncertainty is statistical only. Postfit uncertainty is statistical + systematic.
 \end{frame}
 
-
 \begin{frame}
 \frametitle{Results}
-\begin{minipage}{0.5\textwidth}
-	\begin{center}
-	\begin{figure}
-		\includegraphics[width=6cm,height=5cm]{figures/kin.png}
-		\caption*{\tiny{Pre-fit signal and background yields for tH process. In the
-			box below each distribution, the ratio of the observed and predicted event yields is shown}}
-	\end{figure}
-\end{center}
-\end{minipage}\hfill
-\begin{minipage}{0.5\textwidth}
-	\begin{center}
-	\begin{figure}
-		\includegraphics[width=6cm,height=5cm]{figures/simple.png}
-		\caption*{\tiny{Post-fit signal and background yields for tH process. In the
-			box below each distribution, the ratio of the observed and predicted event yields is shown}}
-	\end{figure}
-\end{center}
+		\begin{figure}
+			\begin{minipage}{0.4\textwidth}
+				\centering
+			\includegraphics[width=5.5cm,height=5cm]{figures/kt-1/kin-kt-1.png}
+			\captionof*{figure}{\tiny{Pre-fit signal and background yields for tH process for $k_t$=-1.\\
+					In the box below each distribution, the ratio of the observed and predicted event yields is shown}}
+\end{minipage}\hfill \quad
+\begin{minipage}{0.4\textwidth}
+	\centering
+			\includegraphics[width=5.5cm,height=5cm]{figures/kt-1/simple-kt-1.png}
+			\captionof*{figure}{\tiny{Post-fit signal and background yields for tH process for $k_t$=-1. \\ 
+					In the box below each distribution, the ratio of the observed and predicted event yields is shown}}
 \end{minipage}
+		\end{figure}
 \end{frame}
 
 \begin{frame}
@@ -830,7 +898,7 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
 		\hline
 		Process  & Number of events prefit    & Number of events Postfit \\
 		\hline
-		tH & 26.2 $\pm$2.60 & 1.83 $\pm$ 26.63\\
+		tH & 26.2 & 1.83 $\pm$ 26.63\\
 		\hline
 		t$\bar{t}$H  & 24.18 $\pm$ 2.26& 24.82 $\pm$ 2.27\\
 		\hline
@@ -850,33 +918,14 @@ L(\mu,\theta)=\prod_{j=1}^{N}\frac{(\mu s_j +b_j)^{n_j}}{n_j !}e^{-(\mu s_j+b_j)
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Results}
-\begin{minipage}{0.5\textwidth}
-	\begin{center}
-		\begin{figure}
-			\includegraphics[width=6cm,height=5cm]{figures/kt-1/kin-kt-1.png}
-			\caption*{\tiny{Pre-fit signal and background yields for tH process for $k_t$=-1.\\
-					 In the box below each distribution, the ratio of the observed and predicted event yields is shown}}
-		\end{figure}
-	\end{center}
-\end{minipage}\hfill
-\begin{minipage}{0.5\textwidth}
-	\begin{center}
-		\begin{figure}
-			\includegraphics[width=6cm,height=5cm]{figures/kt-1/simple-kt-1.png}
-			\caption*{\tiny{Post-fit signal and background yields for tH process for $k_t$=-1. \\ In the
-					box below each distribution, the ratio of the observed and predicted event yields is shown}}
-		\end{figure}
-	\end{center}
-\end{minipage}
-\end{frame}
+
+
 
 \begin{frame}
 \frametitle{ Test statistic $q_{\mu}$ for upper limits}
 For purposes of establishing an upper limit on the strength parameter $\mu$ , we consider two
 closely related test statistics. First, we may define
-\begin{align*}
+\begin{align*} 
 q_{\mu}=
 \begin{dcases}
 -2\ln\lambda(\mu) \qquad \hat{\mu} \leq \mu	\\
@@ -890,6 +939,8 @@ as part of the rejection region of the test. From the definition of the test sta
 higher values of $q_\mu$ represent greater incompatibility between the data and the hypothesized
 value of $\mu$.
 \end{frame}
+
+
 
 \begin{frame}
 \framesubtitle{Test statistic $q_{\mu}$ for upper limits}
@@ -911,43 +962,69 @@ value of $\mu$.
 \end{minipage}
 \end{frame}
 
-\nologo{
-\begin{frame}
-\frametitle{Test statistic $q_{\mu}$ for upper limits}
 
-\begin{center}
-	\begin{tabular}{cc}
-	\includegraphics[width=6cm,height=5cm]{figures/nos.png} & \includegraphics[width=5cm,height=5cm]{figures/normal-curve.jpg}
-	\end{tabular}
-\end{center}
-\end{frame}
-}
 
 
 \begin{frame}
 \frametitle{Test statistic $q_{\mu}$ for upper limits}
 
 \begin{table}
-	\caption*{Table for estimation of $\mu$ for fitting and upper limit with luminosity of 35.9 fb$^{-1}$}
+	\caption*{Table for estimation of $\mu$ for fitting and upper limit with luminosity of 35.9 fb$^{-1}$ with95$\%$ of confidence }
 	\begin{tabular}{|c|c|c|}
 		\hline
 		Model	&$\mu$ &$\mu$ upper limit  \\
 		\hline
-		SM ($K_t=1$)& 2.4975e+00 $\pm$ 1.29e+01&	28.047    \\
+		SM ($k_t=1$)& 2.497 $\pm$ 12.9&	28.047    \\
 		\hline
-	$K_t=-1$	& 6.9361e-02 $\pm$1.02e+00  &1.97 \\
+	$k_t=-1$	&0.0693 $\pm$1.02  &1.97 \\
 		\hline
 	\end{tabular}
 \end{table}
 \end{frame}
 
 
+\begin{frame}
+\frametitle{P value}
+To quantify the level of disagreement we compute the P-value
+\begin{align}
+P_\mu =\int_{t_\mu}^{\infty}f(t_\mu |\mu) dt_\mu
+\end{align}
+where $t_\mu$  is the value of the statistic $t_\mu$ observed from the data and $f(t\mu |\mu)$ denotes
+the PDF (Probability density function) of t$\	mu$ under the assumption of the signal strength $\mu$\cite{4}
+\begin{align}
+f(t\mu |\mu)=\frac{1}{\sqrt{2\pi}} \frac{1}{\sqrt{t_\mu}}e^\frac{-t_\mu}{2}
+\end{align}
+\end{frame}
+
+\nologo{
+\begin{frame}
+\frametitle{P Value and significance }
+%(1/sqrt(2.*pi))*(1/sqrt(x))*exp(-x/2.)
+\begin{center}
+	\begin{tabular}{cc}
+		\includegraphics[width=6cm,height=5cm]{figures/nos.png} & \includegraphics[width=5cm,height=5cm]{figures/normal-curve.jpg}\\
+		P value and significance for $t_\mu$ & A Gaussian distribution with significances indicated.
+		
+	\end{tabular}
+\end{center}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Luminosity}
+\begin{center}
+	\begin{figure}
+		\includegraphics[scale=0.4]{figures/lumi-table.png}
+		\caption*{Graph of luminosity of LHC measured and expected through years\cite{6}}
+	\end{figure}
+\end{center}
+\end{frame}
 \nologo{
 	\begin{frame}
-	\frametitle{Extrapolation of luminosity }
+	\frametitle{Extrapolation of luminosity for SM }
 	\begin{center}
 		\begin{tabular}{cc}
-			\includegraphics[width=5.5cm,height=3cm]{figures/kin.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/35.9fb/kin.png} &
 			\includegraphics[width=5.5cm,height=3cm]{figures/150fb/kin.png}\\ 
 			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
 			\includegraphics[width=5.5cm,height=3cm]{figures/300fb/kin-300.png}&
@@ -960,10 +1037,10 @@ value of $\mu$.
 
 \nologo{
 	\begin{frame}
-	\frametitle{Likelihood scan }
+	\frametitle{Likelihood scan for SM }
 	\begin{center}
 		\begin{tabular}{cc}
-			\includegraphics[width=5.5cm,height=3cm]{figures/Likelihood.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/35.9fb/Likelihood.png} &
 			\includegraphics[width=5.5cm,height=3cm]{figures/150fb/Likelihood.png}\\ 
 			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
 			\includegraphics[width=5.5cm,height=3cm]{figures/300fb/Likelihood.png}&
@@ -980,7 +1057,7 @@ value of $\mu$.
 	\frametitle{Extrapolation of luminosity for $k_t=-1$}
 	\begin{center}
 		\begin{tabular}{cc}
-			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/kin-kt-1.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/35.9fb/kin.png} &
 			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/150fb/kin.png}\\ 
 			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
 			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/300fb/kin-300.png}&
@@ -994,10 +1071,10 @@ value of $\mu$.
 
 \nologo{
 	\begin{frame}
-	\frametitle{Likelihood scan for  $k_t=1$}
+	\frametitle{Likelihood scan for  $k_t=-1$}
 	\begin{center}
 		\begin{tabular}{cc}
-			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/Likelihood-kt-1.png} &
+			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/35.9fb/Likelihood-kt-1.png} &
 			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/150fb/Likelihood.png}\\ 
 			\scriptsize{35.9 fb$^{-1}$} & \scriptsize{150 fb$^{-1}$} \\
 			\includegraphics[width=5.5cm,height=3cm]{figures/kt-1/300fb/Likelihood.png}&
@@ -1009,36 +1086,54 @@ value of $\mu$.
 }
 
 \begin{frame}
-\frametitle{Estimation of $\mu$}
+\frametitle{Results}
+\begin{table}
+	\caption*{Estimation of $\mu$ and upper limits  for extrapolations}
 \tiny{
 	\begin{tabular}{|p{1cm}|c|c|c|c|}
 		\hline
-		Luminosity (fb$^{-1}$)	&$\mu$ &$\mu$ for $k_t=-1$ &$\mu$ upper limit &$\mu$ upper limit for $k_t=1$ \\
+		Luminosity (fb$^{-1}$)	&$\mu$ &$\mu$ for $k_t=-1$ &$\mu$ upper limit &$\mu$ upper limit for $k_t=-1$ \\
 		\hline
-		35.9 & 2.4975e+00 $\pm$ 1.29e+01 & 6.9361e-02 $\pm$1.02e+00&	28.047 & 1.97   \\
+		35.9 & 1.00 $\pm$  8.32 & 1.00 $\pm$  0.249&	22.328 & 2.777   \\
 		\hline
-		150& 1.0000e+00 +/-  6.44e+00 & 1.0000e+00 $\pm$  5.44e-01  &12.619 &0.915 \\
+		150& 1.00 $\pm$  6.44 & 1.00 $\pm$  0.544  &12.619 &0.915 \\
 		\hline
-		300&1.0000e+00 +/-  4.83e+00 &1.0000e+00 $\pm$  4.07e-01 & 9.427&0.649 \\
+		300&1.00 $\pm$  4.83 &1.00 $\pm$  0.407 & 9.427&0.649 \\
 		\hline
-		3000&1.0000e+00 $\pm$  1.54e+00 & 1.0000e+00 $\pm$  1.51e-01&	 3.442 & 0.25
+		3000&1.00 $\pm$  1.54 & 1.00 $\pm$  0.151&	 3.442 & 0.25
 		\\
 		\hline
 	\end{tabular}
 }
+\end{table}
+%upper limit 35.9 asimov 22.328
+%mu asimov 35.9 1.0000e+00 +/-  8.32e+00
+%mu kt-1 asimov 1.0000e+00 +/-  2.49e-01
+%mu kt-1 limit  2.777
 \end{frame}
 
 
+\begin{frame}
+\section{Conclusions}
+\frametitle{Conclusions}
+\begin{itemize}
+	\item We analyzed the tH process produced from PP collisions for the production of $\mu\mu$ final states   
+	\item We discussed about events selections for the 2016 and by using BDT process, separate signal and background data. 
+	\item The creation of a model with systematic uncertainties to make a minimization (fit) and obtain a fit which is compatible with Standard Model.
+	\item two models are included for comparison 
+	\item Generation of likelihood scan for the exclusion of data and obtain the probability of detection of a Higgs boson.
+	\item Generating simulations for predict results with higher luminosities, according to the future experiments.  
+\end{itemize}
+\end{frame}
 	\begin{thebibliography}{99}
 	\begin{frame}
 	\section{References}
 	\frametitle{References}
-
 	\bibliographystyle{amsalpha}
-	\bibitem{1}Gross F. \textit{Relativistic quantum mechanics and field theory} 1994 Wiley
+	\bibitem{1}Gross F. \textit{Relativistic quantum mechanics and field theory}, 1994 ,WllEY-VCH Verlag GmbH \& Co. KGaA
+	\bibitem{2} Griffiths, D. \textit{Introduction to Elementary Particles}, $2^\frac{\circ}{}$ edition, 2008,WllEY-VCH Verlag GmbH \& Co. KGaA
 		\bibitem{2}The CMS collaboration, \textit{Search for production of a Higgs boson and a single top
-	quark in multilepton final states in proton collisions at 13 TeV}, CMS-PAS-HIG-17-
-	005
+	quark in multilepton final states in proton collisions at 13 TeV}, CMS-PAS-HIG-17-005 .arXiv:1811.09696
 	\bibitem{3}Verkerke W \textit{Dealing with systematic uncertainties} 2014. From
 \url{https://indico.cern.ch/event/287744/contributions/1641261/attachments/535763/738679/Verkerke_Statistics_3.pdf}
 \end{frame}
@@ -1050,9 +1145,9 @@ Collaborations, \textit{Combined measurement of the Higgs boson mass in
 114 (2015) doi:10.1103/PhysRevLett.114.191803, arXiv:1503.07589
 \bibitem{4} Cowan G. , Cranmer K., Gross E. , Vitells O.\textit{ Asymptotic formulae for
 	likelihood-based tests of new physics} 2013 , arXiv:1007.1727
-\bibitem{6} CMS Collaboration, \textit{Search for the tH(H$\rightarrow b \bar{b}$) process in the pp collisions at $
-	\sqrt{s}$=13 TeV and study of Higgs boson couplings} 2018,CMS PAS HIG-17-016
 \bibitem{7}CMS collaboration \textit{Search for tHq production in multilepton final states at 13 TeV} ,2017,CMS AN-16-378
+\bibitem{6}CMS collaboration \textit{High-Luminosity Large Hadron Collider (HL-LHC)}, 2017,CERN-2017-007-M
+
 
 \end{frame}
 \end{thebibliography}
@@ -1061,6 +1156,35 @@ Collaborations, \textit{Combined measurement of the Higgs boson mass in
 \section{Supportive slides}
 \huge{Back up}
 \end{frame}
+
+\begin{frame}
+\frametitle{Main backgrounds}
+In the leptonic channels, the main backgrounds are expected to
+arise from the production of top quarks
+\begin{itemize}
+	\item In the dominant t$\bar{t}$ mode, where 
+	same-sign dilepton signatures can occur when a non-prompt lepton from heavy-flavor
+	decay passes the signal selection, or in associated production with a W/Z or Higgs boson.
+	\item Processes with single top quarks also contribute, mostly in the associated production with a Z
+	boson (tZ) or when produced with both a W and a Z boson (WZ) 
+	
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Main backgrounds}
+\begin{itemize}
+\item t$\bar{t}$W$^\pm$ and t$\bar{t}$Z (t$\bar{t}$V): Backgrounds are estimated directly from simulated events% which are corrected for data/MC differences and
+%inefficiencies in the same way as signal events. 
+\item WZ: Diboson production with leptonic Z decays and additional jet radiation in the final state can
+lead to signatures very similar to that of the signal. Due to the larger cross section, the main
+contribution arises from WZ production.
+\item t$\bar{t}$H: tHq production which decays to same sign deleptons.
+\item Rare SM (tZ,VVV,WW,tttt): Due to small event yields, all these process are grouped as one.
+\item Non prompt leptons b quark decays and spurious lepton signatures from hadronic jets.
+\end{itemize}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{BDT parameters}
@@ -1233,38 +1357,7 @@ mu \qquad	\qquad	\qquad	\qquad	\qquad 6.9361e-02 +/-  1.02e+00
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Results}
-\framesubtitle{Likelihood scan}
-To test a hypothesized value of $\mu$ we consider the profile likelihood ratio
-\begin{align}
-\lambda(\mu)=\frac{L(\mu,\hat{\hat{\theta}})}{L(\hat{\mu},\hat{\theta})}
-\end{align}
-\small{
-	\begin{itemize}
-		\item Here $\hat{\hat{\theta}} $ in the numerator denotes the value of $\theta$ that maximizes L for the specified $\mu$,
-		it is the conditional maximum-likelihood (ML) estimator of $\hat{\theta}$ (and thus is a function of $\mu$).
-		The denominator is the maximized (unconditional) likelihood function, i.e., $\hat{\mu}$ and $\hat{\theta}$ are
-		their ML estimators\cite{3}. 
-		\item The presence of the nuisance parameters broadens the profile likelihood as a
-		function of $\mu$ relative to what one would have if their values were fixed. This reflects the loss
-		of information about $\mu$ due to the systematic uncertainties\cite{3}\cite{4}. 
-	\end{itemize}
-}
-\end{frame}
 
-\begin{frame}
-\frametitle{Statistical test}
-It is convenient to use the statistic
-\begin{align}
-t_\mu=-2\ln{\lambda(\mu)} 
-\end{align}
-as the basis of a statistical test. Higher values of $t_\mu$ thus correspond to increasing
-incompatbility between the data and $\mu$.
-We may define a test of a hypothesized value of $\mu$ by using the statistic $t_\mu$ directly
-as measure of discrepancy between the data and the hypothesis, with higher values of
-$t_\mu$ correspond to increasing disagreement\cite{4}
-\end{frame}
 
 \begin{frame}
 \frametitle{Statistical test}
@@ -1276,15 +1369,7 @@ $t_\mu$ correspond to increasing disagreement\cite{4}
 \end{center}
 \end{frame}
 
-\begin{frame}
-\frametitle{P value}
-To quantify the level of disagreement we compute the P-value
-\begin{align}
-P_\mu =\int_{t_\mu}^{\infty}f(t\mu |\mu) dt_\mu
-\end{align}
-where t $\mu$  is the value of the statistic t$\mu$ observed from the data and $f(t\mu |\mu)$ denotes
-the PDF (Probability density function) of t$\	mu$ under the assumption of the signal strength $\mu$\cite{4}
-\end{frame}
+
 
 
 \begin{frame}
