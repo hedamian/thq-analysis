@@ -1,0 +1,8 @@
+
+{
+
+  gSystem->Load("libHistFactory.so");
+
+
+
+}

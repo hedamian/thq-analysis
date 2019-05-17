@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Objetivo}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Objetivo general}{3}{0}{1}
+\beamer@sectionintoc {2}{Antecedentes}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Modelo est\'andar}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Descubrimiento del Higgs}{5}{0}{2}
+\beamer@sectionintoc {3}{Propuesta}{10}{0}{3}
+\beamer@sectionintoc {4}{Justificaci\'on}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{Objetivos espec\'ificos}{13}{0}{4}
+\beamer@sectionintoc {5}{Metodolog\'ia}{14}{0}{5}
+\beamer@sectionintoc {6}{Metas}{16}{0}{6}
+\beamer@sectionintoc {7}{Resultados}{17}{0}{7}
+\beamer@sectionintoc {8}{Plan de Trabajo}{19}{0}{8}
+\beamer@sectionintoc {9}{Avances recientes}{21}{0}{9}
+\beamer@sectionintoc {10}{Infraestructura y recursos }{23}{0}{10}
+\beamer@sectionintoc {11}{Referencias}{24}{0}{11}

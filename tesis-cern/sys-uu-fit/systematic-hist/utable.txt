@@ -1,0 +1,9 @@
+                        VALUE            ERROR                        Eps original
+
+   1  Lumi               1.00000e+00   1.00000e-04    
+   2  alpha_sample_B_sys  -1.98145e-02   9.98956e-01    0.1264  ttz
+   3  alpha_sample_F_sys  -1.56887e-01   2.09273e-01   0.4        fakes
+   4  alpha_sample_T_sys  -5.61589e-02   9.61843e-01   0.1077  ttw
+   5  alpha_sample_W_sys   4.91453e-02   9.36848e-01  0.5    wz
+   6  alpha_sample_Z_sys   6.13734e-01   8.03989e-01  0.5    tz
+   7  mu                     2.43288e+00   7.83589e-01  

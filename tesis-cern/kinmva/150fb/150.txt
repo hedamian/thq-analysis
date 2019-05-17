@@ -1,0 +1,382 @@
+
+Processing kinmvalumi.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+bins x16
+bins16
+Making Model and Measurements (Fast) for measurement: kinMVA
+using lumi = 1 and lumiError = 0.026 including bins between 0 and 1
+fixing the following parameters:
+Creating the output file: _kinMVA.root
+Creating the table file: _results.table
+Creating the HistoToWorkspaceFactoryFast factory
+Setting preprocess functions
+Starting to process channel: SR
+
+
+-------------------
+Starting to process SR channel with 1 observables
+lumi str = [1,0,10]
+lumi Error str = nominalLumi[1,0,1.26],0.026
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooConstVar::th_SR_epsilon
+making normFactor: mu
+WARNING: Const attribute to <NormFactor> tag is deprecated, will ignore. Instead, add 
+	<ParamSetting Const="True">mu</ParamSetting>
+ to your top-level XML's <Measurment> entry
+th_SR has no variation histograms 
+processing hist th
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(th_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset th_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::th_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooStats::HistFactory::FlexibleInterpVar::tth_SR_epsilon
+tth_SR has no variation histograms 
+processing hist thqMVA_ttv_2lss_40_ttH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(tth_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset tth_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::tth_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooStats::HistFactory::FlexibleInterpVar::ttz_SR_epsilon
+ttz_SR has no variation histograms 
+processing hist thqMVA_ttv_2lss_40_ttZ
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(ttz_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset ttz_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::ttz_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooStats::HistFactory::FlexibleInterpVar::ttw_SR_epsilon
+ttw_SR has no variation histograms 
+processing hist thqMVA_ttv_2lss_40_ttW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(ttw_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset ttw_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::ttw_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooStats::HistFactory::FlexibleInterpVar::tz_SR_epsilon
+tz_SR has no variation histograms 
+processing hist tz
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(tz_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset tz_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::tz_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooStats::HistFactory::FlexibleInterpVar::wz_SR_epsilon
+wz_SR has no variation histograms 
+processing hist thqMVA_ttv_2lss_40_WZ
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(wz_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset wz_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::wz_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooStats::HistFactory::FlexibleInterpVar::fakes_SR_epsilon
+fakes_SR has no variation histograms 
+processing hist thqMVA_ttv_2lss_40_data_fakes
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(fakes_SRnominalDHist): fit range of variable obs_x_SR expanded to nearest bin boundaries: [-1,1] --> [-1,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset fakes_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooHistFunc::fakes_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooRealSumPdf::SR_model
+-----------------------------------------
+import model into workspace
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::lumiConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooConstVar::0.026 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::Lumi for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nominalLumi for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::alpha_sample_tth_sysConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooConstVar::1 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::alpha_sample_tth_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nom_alpha_sample_tth_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::alpha_sample_ttz_sysConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::alpha_sample_ttz_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nom_alpha_sample_ttz_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::alpha_sample_ttw_sysConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::alpha_sample_ttw_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nom_alpha_sample_ttw_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::alpha_sample_tz_sysConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::alpha_sample_tz_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nom_alpha_sample_tz_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::alpha_sample_wz_sysConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::alpha_sample_wz_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nom_alpha_sample_wz_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooGaussian::alpha_sample_fakes_sysConstraint for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::alpha_sample_fakes_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::nom_alpha_sample_fakes_sys for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealSumPdf::SR_model for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_th_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::th_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::th_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::obs_x_SR for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::th_SR_overallNorm_x_sigma_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::mu for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooConstVar::th_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_0 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_tth_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::tth_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::tth_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooStats::HistFactory::FlexibleInterpVar::tth_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_1 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_ttz_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::ttz_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::ttz_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooStats::HistFactory::FlexibleInterpVar::ttz_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_2 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_ttw_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::ttw_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::ttw_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooStats::HistFactory::FlexibleInterpVar::ttw_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_3 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_tz_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::tz_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::tz_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooStats::HistFactory::FlexibleInterpVar::tz_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_4 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_wz_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::wz_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::wz_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooStats::HistFactory::FlexibleInterpVar::wz_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_5 for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::L_x_fakes_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooProduct::fakes_SR_overallSyst_x_Exp for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooHistFunc::fakes_SR_nominal for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooStats::HistFactory::FlexibleInterpVar::fakes_SR_epsilon for import of RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) using existing copy of RooRealVar::binWidth_obs_x_SR_6 for import of RooProdPdf::model_SR
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+RooDataSet::AsimovData[obs_x_SR,weight:binWeightAsimov] = 16 entries (966.351 weighted)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset AsimovData
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(SR) changing name of dataset from  AsimovData to asimovData
+[#1] INFO:ObjectHandling -- RooWorkspace::import(SR) importing dataset obsData
+
+RooWorkspace(SR) SR workspace contents
+
+variables
+---------
+(Lumi,alpha_sample_fakes_sys,alpha_sample_tth_sys,alpha_sample_ttw_sys,alpha_sample_ttz_sys,alpha_sample_tz_sys,alpha_sample_wz_sys,binWidth_obs_x_SR_0,binWidth_obs_x_SR_1,binWidth_obs_x_SR_2,binWidth_obs_x_SR_3,binWidth_obs_x_SR_4,binWidth_obs_x_SR_5,binWidth_obs_x_SR_6,mu,nom_alpha_sample_fakes_sys,nom_alpha_sample_tth_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nominalLumi,obs_x_SR,weightVar)
+
+p.d.f.s
+-------
+RooRealSumPdf::SR_model[ binWidth_obs_x_SR_0 * L_x_th_SR_overallSyst_x_Exp + binWidth_obs_x_SR_1 * L_x_tth_SR_overallSyst_x_Exp + binWidth_obs_x_SR_2 * L_x_ttz_SR_overallSyst_x_Exp + binWidth_obs_x_SR_3 * L_x_ttw_SR_overallSyst_x_Exp + binWidth_obs_x_SR_4 * L_x_tz_SR_overallSyst_x_Exp + binWidth_obs_x_SR_5 * L_x_wz_SR_overallSyst_x_Exp + binWidth_obs_x_SR_6 * L_x_fakes_SR_overallSyst_x_Exp ] = 38.5216/966.351
+RooGaussian::alpha_sample_fakes_sysConstraint[ x=alpha_sample_fakes_sys mean=nom_alpha_sample_fakes_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_tth_sysConstraint[ x=alpha_sample_tth_sys mean=nom_alpha_sample_tth_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_ttw_sysConstraint[ x=alpha_sample_ttw_sys mean=nom_alpha_sample_ttw_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_ttz_sysConstraint[ x=alpha_sample_ttz_sys mean=nom_alpha_sample_ttz_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_tz_sysConstraint[ x=alpha_sample_tz_sys mean=nom_alpha_sample_tz_sys sigma=1 ] = 1
+RooGaussian::alpha_sample_wz_sysConstraint[ x=alpha_sample_wz_sys mean=nom_alpha_sample_wz_sys sigma=1 ] = 1
+RooGaussian::lumiConstraint[ x=Lumi mean=nominalLumi sigma=0.026 ] = 1
+RooProdPdf::model_SR[ lumiConstraint * alpha_sample_tth_sysConstraint * alpha_sample_ttz_sysConstraint * alpha_sample_ttw_sysConstraint * alpha_sample_tz_sysConstraint * alpha_sample_wz_sysConstraint * alpha_sample_fakes_sysConstraint * SR_model(obs_x_SR) ] = 38.5216
+
+functions
+--------
+RooProduct::L_x_fakes_SR_overallSyst_x_Exp[ Lumi * fakes_SR_overallSyst_x_Exp ] = 1.84886
+RooProduct::L_x_th_SR_overallSyst_x_Exp[ Lumi * th_SR_overallSyst_x_Exp ] = 0.11398
+RooProduct::L_x_tth_SR_overallSyst_x_Exp[ Lumi * tth_SR_overallSyst_x_Exp ] = 0.119721
+RooProduct::L_x_ttw_SR_overallSyst_x_Exp[ Lumi * ttw_SR_overallSyst_x_Exp ] = 0.0877744
+RooProduct::L_x_ttz_SR_overallSyst_x_Exp[ Lumi * ttz_SR_overallSyst_x_Exp ] = 0.0963786
+RooProduct::L_x_tz_SR_overallSyst_x_Exp[ Lumi * tz_SR_overallSyst_x_Exp ] = 2.54849
+RooProduct::L_x_wz_SR_overallSyst_x_Exp[ Lumi * wz_SR_overallSyst_x_Exp ] = 0
+RooStats::HistFactory::FlexibleInterpVar::fakes_SR_epsilon[ paramList=(alpha_sample_fakes_sys) ] = 1
+RooHistFunc::fakes_SR_nominal[ depList=(obs_x_SR) ] = 1.84886
+RooProduct::fakes_SR_overallSyst_x_Exp[ fakes_SR_nominal * fakes_SR_epsilon ] = 1.84886
+RooHistFunc::th_SR_nominal[ depList=(obs_x_SR) ] = 0.11398
+RooProduct::th_SR_overallNorm_x_sigma_epsilon[ mu * th_SR_epsilon ] = 1
+RooProduct::th_SR_overallSyst_x_Exp[ th_SR_nominal * th_SR_overallNorm_x_sigma_epsilon ] = 0.11398
+RooStats::HistFactory::FlexibleInterpVar::tth_SR_epsilon[ paramList=(alpha_sample_tth_sys) ] = 1
+RooHistFunc::tth_SR_nominal[ depList=(obs_x_SR) ] = 0.119721
+RooProduct::tth_SR_overallSyst_x_Exp[ tth_SR_nominal * tth_SR_epsilon ] = 0.119721
+RooStats::HistFactory::FlexibleInterpVar::ttw_SR_epsilon[ paramList=(alpha_sample_ttw_sys) ] = 1
+RooHistFunc::ttw_SR_nominal[ depList=(obs_x_SR) ] = 0.0877744
+RooProduct::ttw_SR_overallSyst_x_Exp[ ttw_SR_nominal * ttw_SR_epsilon ] = 0.0877744
+RooStats::HistFactory::FlexibleInterpVar::ttz_SR_epsilon[ paramList=(alpha_sample_ttz_sys) ] = 1
+RooHistFunc::ttz_SR_nominal[ depList=(obs_x_SR) ] = 0.0963786
+RooProduct::ttz_SR_overallSyst_x_Exp[ ttz_SR_nominal * ttz_SR_epsilon ] = 0.0963786
+RooStats::HistFactory::FlexibleInterpVar::tz_SR_epsilon[ paramList=(alpha_sample_tz_sys) ] = 1
+RooHistFunc::tz_SR_nominal[ depList=(obs_x_SR) ] = 2.54849
+RooProduct::tz_SR_overallSyst_x_Exp[ tz_SR_nominal * tz_SR_epsilon ] = 2.54849
+RooStats::HistFactory::FlexibleInterpVar::wz_SR_epsilon[ paramList=(alpha_sample_wz_sys) ] = 1
+RooHistFunc::wz_SR_nominal[ depList=(obs_x_SR) ] = 0
+RooProduct::wz_SR_overallSyst_x_Exp[ wz_SR_nominal * wz_SR_epsilon ] = 0
+
+datasets
+--------
+RooDataSet::asimovData(obs_x_SR)
+RooDataSet::obsData(obs_x_SR)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::th_SRnominalDHist(obs_x_SR)
+RooDataHist::tth_SRnominalDHist(obs_x_SR)
+RooDataHist::ttz_SRnominalDHist(obs_x_SR)
+RooDataHist::ttw_SRnominalDHist(obs_x_SR)
+RooDataHist::tz_SRnominalDHist(obs_x_SR)
+RooDataHist::wz_SRnominalDHist(obs_x_SR)
+RooDataHist::fakes_SRnominalDHist(obs_x_SR)
+
+named sets
+----------
+ModelConfig_GlobalObservables:(nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+ModelConfig_Observables:(obs_x_SR)
+coefList:(binWidth_obs_x_SR_0,binWidth_obs_x_SR_1,binWidth_obs_x_SR_2,binWidth_obs_x_SR_3,binWidth_obs_x_SR_4,binWidth_obs_x_SR_5,binWidth_obs_x_SR_6)
+constraintTerms:(lumiConstraint,alpha_sample_tth_sysConstraint,alpha_sample_ttz_sysConstraint,alpha_sample_ttw_sysConstraint,alpha_sample_tz_sysConstraint,alpha_sample_wz_sysConstraint,alpha_sample_fakes_sysConstraint)
+globalObservables:(nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+likelihoodTerms:(SR_model)
+obsAndWeight:(weightVar,obs_x_SR)
+observables:(obs_x_SR)
+observablesSet:(obs_x_SR)
+shapeList:(L_x_th_SR_overallSyst_x_Exp,L_x_tth_SR_overallSyst_x_Exp,L_x_ttz_SR_overallSyst_x_Exp,L_x_ttw_SR_overallSyst_x_Exp,L_x_tz_SR_overallSyst_x_Exp,L_x_wz_SR_overallSyst_x_Exp,L_x_fakes_SR_overallSyst_x_Exp)
+
+generic objects
+---------------
+RooStats::ModelConfig::ModelConfig
+
+Setting Parameter(s) of Interest as: mu 
+
+=== Using the following for ModelConfig ===
+Observables:             RooArgSet:: = (obs_x_SR)
+Parameters of Interest:  RooArgSet:: = (mu)
+Nuisance Parameters:     RooArgSet:: = (Lumi,alpha_sample_fakes_sys,alpha_sample_tth_sys,alpha_sample_ttw_sys,alpha_sample_ttz_sys,alpha_sample_tz_sys,alpha_sample_wz_sys)
+Global Observables:      RooArgSet:: = (nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+PDF:                     RooProdPdf::model_SR[ lumiConstraint * alpha_sample_tth_sysConstraint * alpha_sample_ttz_sysConstraint * alpha_sample_ttw_sysConstraint * alpha_sample_tz_sysConstraint * alpha_sample_wz_sysConstraint * alpha_sample_fakes_sysConstraint * SR_model(obs_x_SR) ] = 38.5216
+
+Opening File to hold channel: _SR_kinMVA_model.root
+About to write channel measurement to file
+Writing sample: th
+Writing sample: tth
+Writing sample: ttz
+Writing sample: ttw
+Writing sample: tz
+Writing sample: wz
+Writing sample: fakes
+Saved all histograms
+Saved Measurement
+Successfully wrote channel to file
+full list of observables:
+RooArgList:: = (obs_x_SR)
+
+
+------------------
+ Entering combination
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nominalLumi
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nom_alpha_sample_tth_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nom_alpha_sample_ttz_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nom_alpha_sample_ttw_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nom_alpha_sample_tz_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nom_alpha_sample_wz_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::nom_alpha_sample_fakes_sys
+-----------------------------------------
+create toy data for SR
+RooDataSet::AsimovData0[obs_x_SR,channelCat,weight:binWeightAsimov] = 16 entries (966.351 weighted)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset asimovDataFullModel
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(combined) changing name of dataset from  asimovDataFullModel to asimovData
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::obs_x_SR
+Merging data for channel SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset SR
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(combined) changing name of dataset from  SR to obsData
+
+RooWorkspace(combined) combined contents
+
+variables
+---------
+(channelCat,nom_alpha_sample_fakes_sys,nom_alpha_sample_tth_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nominalLumi,obs_x_SR,weightVar)
+
+datasets
+--------
+RooDataSet::asimovData(obs_x_SR,weightVar,channelCat)
+RooDataSet::obsData(channelCat,obs_x_SR)
+
+named sets
+----------
+ModelConfig_GlobalObservables:(nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+ModelConfig_Observables:(obs_x_SR,weightVar,channelCat)
+globalObservables:(nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+observables:(obs_x_SR,weightVar,channelCat)
+
+
+
+----------------
+ Importing combined model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset th_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset tth_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset ttz_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset ttw_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset tz_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset wz_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing dataset fakes_SRnominalDHist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooCategory::channelCat for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProdPdf::model_SR
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::lumiConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooConstVar::0.026
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::Lumi
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nominalLumi for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::alpha_sample_tth_sysConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooConstVar::1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::alpha_sample_tth_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nom_alpha_sample_tth_sys for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::alpha_sample_ttz_sysConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::alpha_sample_ttz_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nom_alpha_sample_ttz_sys for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::alpha_sample_ttw_sysConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::alpha_sample_ttw_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nom_alpha_sample_ttw_sys for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::alpha_sample_tz_sysConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::alpha_sample_tz_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nom_alpha_sample_tz_sys for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::alpha_sample_wz_sysConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::alpha_sample_wz_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nom_alpha_sample_wz_sys for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooGaussian::alpha_sample_fakes_sysConstraint
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::alpha_sample_fakes_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::nom_alpha_sample_fakes_sys for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealSumPdf::SR_model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_th_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::th_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::th_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) using existing copy of RooRealVar::obs_x_SR for import of RooSimultaneous::simPdf
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::th_SR_overallNorm_x_sigma_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::mu
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooConstVar::th_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_0
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_tth_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::tth_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::tth_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooStats::HistFactory::FlexibleInterpVar::tth_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_ttz_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::ttz_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::ttz_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooStats::HistFactory::FlexibleInterpVar::ttz_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_ttw_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::ttw_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::ttw_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooStats::HistFactory::FlexibleInterpVar::ttw_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_3
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_tz_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::tz_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::tz_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooStats::HistFactory::FlexibleInterpVar::tz_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_4
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_wz_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::wz_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::wz_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooStats::HistFactory::FlexibleInterpVar::wz_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_5
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::L_x_fakes_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooProduct::fakes_SR_overallSyst_x_Exp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooHistFunc::fakes_SR_nominal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooStats::HistFactory::FlexibleInterpVar::fakes_SR_epsilon
+[#1] INFO:ObjectHandling -- RooWorkspace::import(combined) importing RooRealVar::binWidth_obs_x_SR_6
+Setting Parameter(s) of Interest as: mu 
+
+=== Using the following for ModelConfig ===
+Observables:             RooArgSet:: = (obs_x_SR,weightVar,channelCat)
+Parameters of Interest:  RooArgSet:: = (mu)
+Nuisance Parameters:     RooArgSet:: = (Lumi,alpha_sample_fakes_sys,alpha_sample_tth_sys,alpha_sample_ttw_sys,alpha_sample_ttz_sys,alpha_sample_tz_sys,alpha_sample_wz_sys)
+Global Observables:      RooArgSet:: = (nominalLumi,nom_alpha_sample_tth_sys,nom_alpha_sample_ttz_sys,nom_alpha_sample_ttw_sys,nom_alpha_sample_tz_sys,nom_alpha_sample_wz_sys,nom_alpha_sample_fakes_sys)
+PDF:                     RooSimultaneous::simPdf[ indexCat=channelCat SR=model_SR ] = 38.5216
+
+Writing combined workspace to file: _combined_kinMVA_model.root
+Writing combined measurement to file: _combined_kinMVA_model.root
+Writing sample: th
+Writing sample: tth
+Writing sample: ttz
+Writing sample: ttw
+Writing sample: tz
+Writing sample: wz
+Writing sample: fakes
+Saved all histograms
+Saved Measurement
+min max116
+integral total966.351

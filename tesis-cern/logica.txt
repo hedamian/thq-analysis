@@ -1,0 +1,19 @@
+LOGICA:
+- slides con diagramas poner comentario de crossections para comparar listo
+- remover uno de los slides de tH Feynman diagrams listo
+- despues de topology describir las selecciones 
+- despues de selecciones los resultados anteriores: postfit, LL scan, significance (combined y mu-mu )   
+- slides deben llevar titulos y algun comentario sobre lo que esta en el slide
+- slide con lista de nombres de histogramas  a backup
+- slide con definicion de histogramas para ruidos a backup
+- crear nuevo slide listando como se define ruidos y señal
+- en slide con prefit yields comparar con yields de histogramas originales listo 
+- slide comparando grafica de kinMVA mover a backup  
+- combinar slides con sistematicos en uno solo de forma que puedas explicar
+- introducir slide con distribucion de prefit para explicar el BDT 
+- slide con Fitting y Analysis remplazar con slide del Likelihood y explicar como el ajuste trabaja
+- presentar tu postfit y yields
+- mover slides de alfas al back-up
+- calcular incertidumbres en los postfit y agregar a la tabla
+- presentar likelihood scan, eso muestra la incertidumbre en mu , tambien exclusion de valores de mu que resulten en > 3sigma
+- mover slides con f(t) e integral al backup, es solo para poder explicar las lineas correspondientes a 1,2,3 sigma

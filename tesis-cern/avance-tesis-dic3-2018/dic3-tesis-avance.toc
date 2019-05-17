@@ -1,0 +1,12 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Introducci\'on}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Objetivo general}{3}{0}{1}
+\beamer@sectionintoc {2}{Motivaci\'on}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Topolog\IeC {\'\i }a de eventos tH}{9}{0}{2}
+\beamer@sectionintoc {3}{Exploraci\'on de los datos de CMS}{10}{0}{3}
+\beamer@sectionintoc {4}{Selecci\'on de eventos}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Discriminaci\'on de se\~nal usando BDT}{13}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{16}{0}{5}
+\beamer@sectionintoc {6}{Actividades}{18}{0}{6}
+\beamer@sectionintoc {7}{Resumen}{19}{0}{7}
+\beamer@sectionintoc {8}{Referencias}{20}{0}{8}

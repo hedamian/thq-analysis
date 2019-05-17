@@ -1,0 +1,113 @@
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+
+Processing macros/simpleFit.C("SimpleNumberCounting")...
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_simPdf_FOR_OBS_channelCat:obs_x_SR with 6 entries
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (lumiConstraint,alpha_sample_B_sysConstraint,alpha_sample_T_sysConstraint,alpha_sample_W_sysConstraint,alpha_sample_Z_sysConstraint,alpha_sample_F_sysConstraint)
+[#1] INFO:Minization -- The following global observables have been defined: (nominalLumi,nom_alpha_sample_B_sys,nom_alpha_sample_T_sys,nom_alpha_sample_W_sys,nom_alpha_sample_Z_sys,nom_alpha_sample_F_sys)
+RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state SR (10 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_model_Int[obs_x_SR]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (S_SR_nominal,B_SR_nominal,T_SR_nominal,W_SR_nominal,Z_SR_nominal,F_SR_nominal)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Lumi         1.00000e+00  5.00000e-01    0.00000e+00  1.00000e+01
+     2 alpha_sample_B_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     3 alpha_sample_F_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     4 alpha_sample_T_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     5 alpha_sample_W_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     6 alpha_sample_Z_sys   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+     7 mu           1.00000e+00  5.00000e-01    0.00000e+00  1.00000e+02
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           0
+ **********
+ NOW USING STRATEGY  0: MINIMIZE THE NUMBER OF CALLS TO FUNCTION
+ **********
+ **    6 **MIGRAD        3500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(SR) first = 0 last = 10 Likelihood offset now set to -759.333
+ START MIGRAD MINIMIZATION.  STRATEGY  0.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.69671) to force MIGRAD to back out of this region. Error log follows
+Parameter values: Lumi=1.00517, alpha_sample_B_sys=0, alpha_sample_F_sys=0, alpha_sample_T_sys=0, alpha_sample_W_sys=0, alpha_sample_Z_sys=0, mu=1
+RooGaussian::lumiConstraint[ x=Lumi mean=nominalLumi sigma=0.0001 ]
+     p.d.f normalization integral is zero or negative @ x=Lumi=1.00517, mean=nominalLumi=1, sigma=0.0001=0.0001
+     getLogVal() top-level p.d.f evaluates to zero @ x=Lumi=1.00517, mean=nominalLumi=1, sigma=0.0001=0.0001
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (-3.69671) to force MIGRAD to back out of this region. Error log follows
+Parameter values: Lumi=0.99484, alpha_sample_B_sys=0, alpha_sample_F_sys=0, alpha_sample_T_sys=0, alpha_sample_W_sys=0, alpha_sample_Z_sys=0, mu=1
+RooGaussian::lumiConstraint[ x=Lumi mean=nominalLumi sigma=0.0001 ]
+     getLogVal() top-level p.d.f evaluates to zero @ x=Lumi=0.99484, mean=nominalLumi=1, sigma=0.0001=0.0001
+
+ FCN=-3.69671 FROM MIGRAD    STATUS=INITIATE       26 CALLS          27 TOTAL
+                     EDM= unknown      STRATEGY= 0      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00000e+00   5.00000e-01   1.72186e-01  -1.19279e+02
+   2  alpha_sample_B_sys   0.00000e+00   1.00000e+00   2.01358e-01  -2.65640e+00
+   3  alpha_sample_F_sys   0.00000e+00   1.00000e+00   2.01358e-01   7.40124e+01
+   4  alpha_sample_T_sys   0.00000e+00   1.00000e+00   2.01358e-01  -8.30732e+00
+   5  alpha_sample_W_sys   0.00000e+00   1.00000e+00   2.01358e-01   9.77819e+00
+   6  alpha_sample_Z_sys   0.00000e+00   1.00000e+00   2.01358e-01   5.01285e+00
+   7  mu           1.00000e+00   5.00000e-01   5.20130e-02  -6.09408e+01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=-8.70222 FROM MIGRAD    STATUS=CONVERGED     110 CALLS         111 TOTAL
+                     EDM=6.36879e-06    STRATEGY= 0  ERROR MATRIX UNCERTAINTY  12.8 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Lumi         1.00000e+00   1.00000e-04   3.09492e-09  -1.57739e+00
+   2  alpha_sample_B_sys  -1.98145e-02   9.98956e-01   2.61743e-04  -4.58497e-03
+   3  alpha_sample_F_sys  -1.56887e-01   2.09273e-01  -6.77548e-05   6.82817e-02
+   4  alpha_sample_T_sys  -5.61589e-02   9.61843e-01  -4.89768e-04   2.97845e-03
+   5  alpha_sample_W_sys   4.91453e-02   9.36848e-01   1.74919e-03   9.34935e-03
+   6  alpha_sample_Z_sys   6.13734e-01   8.03989e-01  -1.91276e-03   1.00788e-02
+   7  mu           2.43288e+00   7.83589e-01  -2.45956e-04  -4.15709e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  7    ERR DEF=0.5
+  1.000e-08  7.186e-09  5.018e-09 -3.442e-08 -5.088e-09 -1.230e-08 -5.657e-08 
+  7.186e-09  1.011e+00  1.391e-02  1.528e-03  1.018e-02  2.541e-02 -6.496e-02 
+  5.018e-09  1.391e-02  4.382e-02  5.072e-02 -7.809e-02 -3.187e-02  7.417e-02 
+ -3.442e-08  1.528e-03  5.072e-02  9.368e-01 -5.728e-03  4.037e-02 -1.617e-01 
+ -5.088e-09  1.018e-02 -7.809e-02 -5.728e-03  8.882e-01  2.086e-02  5.277e-02 
+ -1.230e-08  2.541e-02 -3.187e-02  4.037e-02  2.086e-02  6.521e-01  5.354e-02 
+ -5.657e-08 -6.496e-02  7.417e-02 -1.617e-01  5.277e-02  5.354e-02  6.145e-01 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.00146   1.000  0.000  0.000 -0.000 -0.000 -0.000 -0.001
+        2  0.21549   0.000  1.000  0.066  0.002  0.011  0.031 -0.082
+        3  0.77011   0.000  0.066  1.000  0.250 -0.396 -0.189  0.452
+        4  0.54505  -0.000  0.002  0.250  1.000 -0.006  0.052 -0.213
+        5  0.56191  -0.000  0.011 -0.396 -0.006  1.000  0.027  0.071
+        6  0.38069  -0.000  0.031 -0.189  0.052  0.027  1.000  0.085
+        7  0.69745  -0.001 -0.082  0.452 -0.213  0.071  0.085  1.000
+ ERR MATRIX APPROXIMATE
+fakes80.9392
+tz15.7323
+wz15.0733
+ttz25.8855
+ttw68.0289
+signal28.6522
+signal   280

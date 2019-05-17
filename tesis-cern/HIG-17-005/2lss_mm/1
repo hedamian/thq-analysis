@@ -1,0 +1,11 @@
+void 2lss-ejemplo(){
+
+TFile* file = TFile::Open("tHq_2lss_mm_0p5_0p25.input.root");
+
+
+x_ttH_hww_CMS_ttHl_btag_cErr2Down->Draw();
+
+
+
+
+}

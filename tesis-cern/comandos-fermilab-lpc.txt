@@ -1,0 +1,5 @@
+ver discos disponibles 
+quota -s 
+
+ver configuracion
+env
